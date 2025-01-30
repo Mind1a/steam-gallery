@@ -17,3 +17,23 @@ export const Navlinks: Navlink[] = [
     name: 'კონტაქტი',
   },
 ];
+
+export type SliderItem = {
+  image: string;
+  title: string;
+};
+
+export const SliderItems: SliderItem[] = [
+  {
+    image: './assets/images/slider-image.png',
+    title: 'slide 1',
+  },
+  {
+    image: './assets/images/slider-image.png',
+    title: 'slide 2',
+  },
+  {
+    image: './assets/images/slider-image.png',
+    title: 'slide 3',
+  },
+];
