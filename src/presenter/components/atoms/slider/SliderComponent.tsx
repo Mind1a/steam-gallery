@@ -28,7 +28,7 @@ export default function SliderComponent() {
     <div className="relative mx-auto w-full max-w-[1442px] overflow-hidden">
       <Slider {...settings} className="">
         {SliderItems.map((item, index) => (
-          <div key={index}>
+          <div key={index} className="outline-none">
             <img src={item.image} alt={item.title} className="w-full" />
           </div>
         ))}

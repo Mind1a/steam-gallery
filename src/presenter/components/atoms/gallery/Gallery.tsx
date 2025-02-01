@@ -11,7 +11,7 @@ export default function Gallery() {
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-full w-full object-cover"
+                className="h-full w-full rounded-lg object-cover shadow-[0px_4px_10px_0px_#88787833]"
               />
             </div>
           ))}
