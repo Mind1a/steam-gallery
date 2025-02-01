@@ -18,12 +18,12 @@ export const Navlinks: Navlink[] = [
   },
 ];
 
-export type SliderItem = {
+export type ImageItem = {
   image: string;
   title: string;
 };
 
-export const SliderItems: SliderItem[] = [
+export const SliderItems: ImageItem[] = [
   {
     image: './assets/images/slider-image.png',
     title: 'slide 1',
@@ -35,5 +35,32 @@ export const SliderItems: SliderItem[] = [
   {
     image: './assets/images/slider-image.png',
     title: 'slide 3',
+  },
+];
+
+export const GalleryItems: ImageItem[] = [
+  {
+    image: './assets/images/gallery-images/gallery-image-1.jpg',
+    title: 'gallery image 1',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-2.jpg',
+    title: 'gallery image 2',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-3.jpg',
+    title: 'gallery image 3',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-4.jpg',
+    title: 'gallery image 4',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-5.jpg',
+    title: 'gallery image 5',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-6.jpg',
+    title: 'gallery image 6',
   },
 ];
