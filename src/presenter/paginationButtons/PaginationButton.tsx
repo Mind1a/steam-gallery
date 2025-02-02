@@ -12,18 +12,20 @@ export default function PaginationButtons({
   onClick,
 }: PaginationButtonProps) {
   return (
-    <div className="mx-2 flex items-center justify-center">
+    <div className="mx-2">
       <button
         onClick={onClick}
-        className="bg-primary-blue flex w-[80px] cursor-pointer items-center justify-center rounded-lg px-4 py-2 text-sm font-normal text-white"
+        className="bg-primary-blue flex h-full w-[80px] cursor-pointer items-center justify-center gap-1 rounded-lg px-4 py-2 text-sm font-normal text-white"
       >
         {variant === 'left' && (
-          <img src={PaginationButton} className="rotate-180" />
+          <img src={PaginationButton} className="mt-0.5" />
         )}
 
         <span>{text}</span>
 
-        {variant === 'right' && <img src={PaginationButton} />}
+        {variant === 'right' && (
+          <img src={PaginationButton} className="mt-0.5 rotate-180" />
+        )}
       </button>
     </div>
   );
