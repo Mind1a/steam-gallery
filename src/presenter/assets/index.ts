@@ -63,4 +63,30 @@ export const GalleryItems: ImageItem[] = [
     image: './assets/images/gallery-images/gallery-image-6.jpg',
     title: 'gallery image 6',
   },
+  {
+    image: './assets/images/gallery-images/gallery-image-1.jpg',
+    title: 'gallery image 1',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-2.jpg',
+    title: 'gallery image 2',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-3.jpg',
+    title: 'gallery image 3',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-4.jpg',
+    title: 'gallery image 4',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-5.jpg',
+    title: 'gallery image 5',
+  },
+  {
+    image: './assets/images/gallery-images/gallery-image-6.jpg',
+    title: 'gallery image 6',
+  },
 ];
+
+export { default as PaginationButton } from '/assets/svgs/icons/pagination-arrow.svg';

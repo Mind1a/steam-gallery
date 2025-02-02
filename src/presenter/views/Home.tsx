@@ -6,13 +6,13 @@ import Footer from '../components/atoms/footer/Footer';
 export default function Home() {
   return (
     <>
-      <body className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col">
         <Header />
         <Slider></Slider>
         <Gallery></Gallery>
         <div className="flex-1"></div>
         <Footer />
-      </body>
+      </div>
     </>
   );
 }

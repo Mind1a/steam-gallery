@@ -1,13 +1,34 @@
 import { GalleryItems } from '../../../assets/index';
+import { useState } from 'react';
+import Pagination from '../pagination/Pagination';
 
 export default function Gallery() {
+  const illustrationsPerPage = 8;
+  const totalPages = Math.ceil(GalleryItems.length / illustrationsPerPage);
+
+  const [currentPage, setCurrentPage] = useState<number>(1);
+
+  const currentIllustrations = GalleryItems.slice(
+    (currentPage - 1) * illustrationsPerPage,
+    currentPage * illustrationsPerPage
+  );
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
   return (
     <>
-      <div className="mx-auto w-full max-w-[1442px] items-center p-12">
-        <p className="text-font-primary mb-4 text-2xl font-light">გალერია</p>
-        <div className="grid grid-cols-4 gap-6">
-          {GalleryItems.map((item, index) => (
-            <div key={index} className="w-max[318px] h-max[400px]">
+      <div className="mx-auto mb-[32px] flex w-full max-w-[1442px] flex-col items-center p-12">
+        <p className="text-font-primary mb-4 w-full text-left text-2xl font-light">
+          გალერია
+        </p>
+        <div className="mb-6 grid h-[820px] grid-cols-4 gap-6">
+          {currentIllustrations.map((item, index) => (
+            <div
+              key={index}
+              className="h-auto max-h-[400px] w-full max-w-[318px] overflow-hidden"
+            >
               <img
                 src={item.image}
                 alt={item.title}
@@ -16,6 +37,10 @@ export default function Gallery() {
             </div>
           ))}
         </div>
+        <Pagination
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        ></Pagination>
       </div>
     </>
   );
