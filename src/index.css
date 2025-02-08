@@ -1,35 +1,64 @@
 @import 'tailwindcss';
 @font-face {
   font-family: 'Nato-Sans';
-  src: url('assets/fonts/NotoSansGeorgian-ExtraLight.woff2');
+  font-style: normal;
+  src: url('/assets/fonts/NotoSansGeorgian-ExtraLight.woff2') format('woff2');
   font-weight: 200;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Nato-Sans';
-  src: url('assets/fonts/NotoSansGeorgian-Light.woff2');
+  font-style: normal;
+  src: url('/assets/fonts/NotoSansGeorgian-Light.woff2') format('woff2');
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Nato-Sans';
-  src: url('assets/fonts/NotoSansGeorgian-Regular.woff2');
+  font-style: normal;
+  src: url('/assets/fonts/NotoSansGeorgian-Regular.woff2') format('woff2');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Nato-Sans';
-  src: url('assets/fonts/NotoSansGeorgian-Medium.woff2');
+  font-style: normal;
+  src: url('/assets/fonts/NotoSansGeorgian-Medium.woff2') format('woff2');
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Nato-Sans';
-  src: url('assets/fonts/NotoSansGeorgian-Bold.woff2');
+  font-style: normal;
+  src: url('/assets/fonts/NotoSansGeorgian-Bold.woff2') format('woff2');
   font-weight: 700;
   font-display: swap;
+}
+
+@theme {
+  --font-nato: 'Nato-Sans' sans-serif;
+
+  --color-header-bg: #f6f0e6;
+  --color-primary-yellow: #d4a017;
+  --color-primary-blue: #243b4a;
+  --color-footer-bg: #1c1c1c;
+  --color-font-primary: #5c4033;
+}
+
+body {
+  @apply font-nato;
+}
+
+.slick-dots li button:before {
+  font-size: 16px !important;
+  color: #243b4a !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #d9d9d9 !important;
 }
