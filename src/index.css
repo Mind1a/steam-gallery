@@ -41,12 +41,14 @@
 
 @theme {
   --font-nato: 'Nato-Sans' sans-serif;
+  --font-feature-settings: 'case': on
 
   --color-header-bg: #f6f0e6;
   --color-primary-yellow: #d4a017;
   --color-primary-blue: #243b4a;
   --color-footer-bg: #1c1c1c;
   --color-font-primary: #5c4033;
+  --color-primary-red: #A50021;
 }
 
 body {
@@ -55,10 +57,17 @@ body {
 
 .slick-dots li button:before {
   font-size: 16px !important;
-  color: #243b4a !important;
+  color: #FFFAFA !important;
   opacity: 1 !important;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #d9d9d9 !important;
+  color: #A50021 !important;
+}
+
+@media (min-width: 1442px) {
+  .slider-padding {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 }

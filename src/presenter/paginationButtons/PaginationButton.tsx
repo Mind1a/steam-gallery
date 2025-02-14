@@ -4,18 +4,20 @@ interface PaginationButtonProps {
   text: string;
   variant?: 'left' | 'right';
   onClick?: () => void;
+  bgColor?: string;
 }
 
 export default function PaginationButtons({
   text,
   variant,
   onClick,
+  bgColor = 'bg-primary-blue',
 }: PaginationButtonProps) {
   return (
     <div className="mx-2">
       <button
         onClick={onClick}
-        className="bg-primary-blue flex h-full w-[80px] cursor-pointer items-center justify-center gap-1 rounded-lg px-4 py-2 text-sm font-normal text-white"
+        className={`${bgColor} flex h-full w-[80px] cursor-pointer items-center justify-center gap-1 rounded-lg px-4 py-2 text-sm font-normal text-white`}
       >
         {variant === 'left' && (
           <img src={PaginationButton} className="mt-0.5" />

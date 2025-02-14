@@ -27,13 +27,14 @@ export default function Gallery() {
           {currentIllustrations.map((item, index) => (
             <div
               key={index}
-              className="h-auto max-h-[400px] w-full max-w-[318px] overflow-hidden"
+              className="relative h-auto max-h-[400px] w-full max-w-[318px] overflow-hidden"
             >
               <img
                 src={item.image}
                 alt={item.title}
                 className="h-full w-full rounded-lg object-cover shadow-[0px_4px_10px_0px_#88787833]"
               />
+              <div className='absolute inset-0 bg-black opacity-40 transition-opacity duration-300 hover:opacity-0'></div>
             </div>
           ))}
         </div>

@@ -43,6 +43,7 @@ export default function Pagination({
         text="Next"
         variant="right"
         onClick={() => handlePageChange(currentPage + 1)}
+        bgColor='bg-primary-red'
       />
     </div>
   );
