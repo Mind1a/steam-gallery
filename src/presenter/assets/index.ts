@@ -3,6 +3,8 @@ export interface Navlink {
   name: string;
 }
 
+import Logo from '/assets/svgs/icons/logo.svg';
+
 export const Navlinks: Navlink[] = [
   {
     id: 'home',
@@ -90,3 +92,4 @@ export const GalleryItems: ImageItem[] = [
 ];
 
 export { default as PaginationButton } from '/assets/svgs/icons/pagination-arrow.svg';
+export {Logo};

@@ -27,10 +27,10 @@ export default function Pagination({
       <div className="flex w-full items-center justify-center gap-2">
         {Array.from({ length: totalPages }, (_, i) => (
           <button
-            className={`text-font-primary cursor-pointer rounded-lg bg-white px-4 py-2 shadow-[0px_10px_20px_2px_#00000012] ${
+            className={`text-font-primary cursor-pointer rounded-lg bg-white px-4 py-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.07)] ${
               currentPage === i + 1
-                ? 'text-primary-blue font-bold'
-                : 'font-normal'
+                ? 'text-primary-blue font-extrabold'
+                : 'font-normal text-font-primary'
             }`}
             key={i}
             onClick={() => handlePageChange(i + 1)}
@@ -43,7 +43,6 @@ export default function Pagination({
         text="Next"
         variant="right"
         onClick={() => handlePageChange(currentPage + 1)}
-        bgColor='bg-primary-red'
       />
     </div>
   );

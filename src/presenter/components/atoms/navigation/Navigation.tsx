@@ -10,10 +10,10 @@ export default function Navigation() {
             key={link.id}
             to={`/${link.id === 'home' ? '' : link.id}`}
             className={({ isActive }) =>
-              `border-primary-blue text-[16px] ${
+              `border-opacity-20 text-[16px] ${
                 isActive
-                  ? 'text-primary-yellow font-bold'
-                  : 'text-primary-blue font-normal'
+                  ? 'text-primary-red font-semibold'
+                  : 'text-primary-blue font-semibold'
               } ${link.id !== 'contact' ? 'border-r px-[20px]' : 'pl-[20px]'}`
             }
           >

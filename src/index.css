@@ -42,10 +42,10 @@
 @theme {
   --font-nato: 'Nato-Sans' sans-serif;
 
-  --color-header-bg: #f6f0e6;
+  --color-header-bg: #FFFAFA;
   --color-primary-yellow: #d4a017;
   --color-primary-blue: #243b4a;
-  --color-footer-bg: #1c1c1c;
+  --color-footer-bg: #A50021;
   --color-font-primary: #5c4033;
   --color-primary-red: #A50021;
 }
@@ -69,4 +69,12 @@ body {
     padding-left: 48px;
     padding-right: 48px;
   }
+}
+
+.border-opacity-20 {
+  border-color: rgba(36, 59, 74, 0.2); /* Assuming primary blue color with 20% opacity */
+}
+
+.font-weight-250 {
+  font-weight: 250;
 }
