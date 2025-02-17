@@ -1,9 +1,28 @@
 import { GalleryItems } from '../../../assets/index';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Pagination from '../pagination/Pagination';
 
 export default function Gallery() {
-  const illustrationsPerPage = 8;
+  const [illustrationsPerPage, setIllustrationsPerPage] = useState<number>(9); // Default to 9 for small screens
+
+  useEffect(() => {
+    const updateIllustrationsPerPage = () => {
+      if (window.innerWidth >= 1024) {
+        setIllustrationsPerPage(8);
+      } else if (window.innerWidth >= 640) {
+        setIllustrationsPerPage(9);
+      } else {
+        setIllustrationsPerPage(6);
+      }
+    };
+
+    updateIllustrationsPerPage();
+
+    window.addEventListener('resize', updateIllustrationsPerPage);
+
+    return () => window.removeEventListener('resize', updateIllustrationsPerPage);
+  }, []);
+
   const totalPages = Math.ceil(GalleryItems.length / illustrationsPerPage);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -19,11 +38,11 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="mx-auto mb-[32px] flex w-full max-w-[1442px] flex-col items-center p-12">
-        <p className="text-font-primary mb-4 w-full text-left text-2xl font-light">
+      <div className="mx-auto mb-[32px] flex w-full max-w-[1442px] flex-col items-center p-12 max-lg:p-6">
+        <p className="text-font-primary mb-4 max-sm:mb-1 w-full text-left text-2xl font-light">
           გალერია
         </p>
-        <div className="mb-6 grid h-[820px] grid-cols-4 gap-6">
+        <div className="mb-6 grid min-h-[820px] grid-cols-4 gap-6 max-sm:gap-4 max-lg:grid-cols-3 max-sm:grid-cols-2">
           {currentIllustrations.map((item, index) => (
             <div
               key={index}
@@ -34,7 +53,7 @@ export default function Gallery() {
                 alt={item.title}
                 className="h-full w-full rounded-lg object-cover shadow-[0px_4px_10px_0px_#88787833]"
               />
-              <div className='absolute inset-0 bg-black opacity-40 transition-opacity duration-300 hover:opacity-0'></div>
+              <div className="absolute inset-0 lg:bg-black opacity-40 rounded-lg transition-opacity duration-300 hover:opacity-0"></div>
             </div>
           ))}
         </div>

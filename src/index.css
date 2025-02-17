@@ -78,3 +78,7 @@ body {
 .font-weight-250 {
   font-weight: 250;
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}

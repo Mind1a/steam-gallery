@@ -18,7 +18,7 @@ export default function Pagination({
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center gap-1">
       <PaginationButtons
         text="Back"
         variant="left"
