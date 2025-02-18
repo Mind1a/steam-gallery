@@ -1,20 +1,26 @@
 import { Navlinks } from '../../../assets/index';
 import { NavLink } from 'react-router-dom';
 
-export default function Navigation() {
+interface NavigationProps {
+  linkClassName?: string;
+  activeLinkClassName?: string;
+  isColumn?: boolean;
+}
+
+export default function Navigation({ linkClassName = '', activeLinkClassName = '', isColumn = false }: NavigationProps) {
   return (
-    <nav>
-      <ul className="flex">
+    <nav className={` ${isColumn ? 'w-full' : ''}`}>
+      <ul className={`flex ${isColumn ? 'flex-col text-center' : 'flex-row'}`}>
         {Navlinks.map((link) => (
           <NavLink
             key={link.id}
             to={`/${link.id === 'home' ? '' : link.id}`}
             className={({ isActive }) =>
-              `border-primary-blue text-[16px] ${
-                isActive
-                  ? 'text-primary-yellow font-bold'
-                  : 'text-primary-blue font-normal'
-              } ${link.id !== 'contact' ? 'border-r px-[20px]' : 'pl-[20px]'}`
+              `${linkClassName} ${isActive ? activeLinkClassName : ''}
+               ${isColumn ? 'contact border-b px-[20px] w-fullpx-[20px] flex justify-center items-center h-[65px] border-gray-500 ' :
+               `${link.id !== 'contact' ? 'border-r px-[20px]' : 'pl-[20px]'
+               }`
+              }`
             }
           >
             {link.name}

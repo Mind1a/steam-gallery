@@ -18,7 +18,7 @@ export default function Pagination({
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center gap-1">
       <PaginationButtons
         text="Back"
         variant="left"
@@ -27,10 +27,10 @@ export default function Pagination({
       <div className="flex w-full items-center justify-center gap-2">
         {Array.from({ length: totalPages }, (_, i) => (
           <button
-            className={`text-font-primary cursor-pointer rounded-lg bg-white px-4 py-2 shadow-[0px_10px_20px_2px_#00000012] ${
+            className={`text-font-primary cursor-pointer rounded-lg bg-white px-4 py-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.07)] ${
               currentPage === i + 1
-                ? 'text-primary-blue font-bold'
-                : 'font-normal'
+                ? 'text-primary-blue font-extrabold'
+                : 'font-normal text-font-primary'
             }`}
             key={i}
             onClick={() => handlePageChange(i + 1)}

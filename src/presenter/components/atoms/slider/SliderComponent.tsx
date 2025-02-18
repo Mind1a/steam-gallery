@@ -25,7 +25,7 @@ export default function SliderComponent() {
     ),
   };
   return (
-    <div className="relative mx-auto w-full max-w-[1442px] overflow-hidden">
+    <div className="relative mx-auto w-full max-w-[1442px] overflow-hidden slider-padding">
       <Slider {...settings} className="">
         {SliderItems.map((item, index) => (
           <div key={index} className="outline-none">
