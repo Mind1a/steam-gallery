@@ -1,12 +1,14 @@
 import Header from '../components/atoms/header/Header';
 import Footer from '../components/atoms/footer/Footer';
+import { ContactContent } from '../components/atoms/contactContent/ContactContent';
+
 
 export default function Contact() {
   return (
     <>
-      <div className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col justify-center items-center">
         <Header />
-        <div className="flex-1"></div>
+          <ContactContent />
         <Footer />
       </div>
     </>
