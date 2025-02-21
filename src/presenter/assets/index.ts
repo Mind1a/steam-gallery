@@ -6,6 +6,14 @@ export interface Navlink {
 import Logo from '/assets/svgs/icons/logo.svg';
 import Burger1 from '/assets/svgs/icons/burger1.svg';
 import Burger2 from '/assets/svgs/icons/burger2.svg';
+import AboutUs from '/assets/images/aboutUs.webp';
+import AboutUs2 from '/assets/images/aboutUs2.webp';
+import Call from '/assets/svgs/icons/call.svg';
+import Email from '/assets/svgs/icons/email.svg';
+import Location from '/assets/svgs/icons/location.svg';
+import FaceBook from '/assets/svgs/icons/facebook.svg';
+import Instagram from '/assets/svgs/icons/instagram.svg';
+
 
 export const Navlinks: Navlink[] = [
   {
@@ -97,3 +105,10 @@ export { default as PaginationButton } from '/assets/svgs/icons/pagination-arrow
 export {Logo};
 export {Burger1};
 export {Burger2};
+export { AboutUs};
+export {AboutUs2};
+export {Call};
+export {Email};
+export {Location};
+export {FaceBook};
+export {Instagram};
