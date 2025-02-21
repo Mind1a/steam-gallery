@@ -17,7 +17,7 @@ export default function PaginationButtons({
     <div className="mx-2">
       <button
         onClick={onClick}
-        className={`${bgColor} hover:bg-primary-red active:bg-primary-red transition duration-100 max-lg:transition-none max-lg:duration-0 flex h-full w-[80px] cursor-pointer items-center justify-center gap-1 rounded-lg px-4 py-2 text-sm font-normal text-white`}
+        className={`${bgColor} hover:bg-primary-red active:bg-primary-red transition duration-200 max-lg:transition-none max-lg:duration-0 flex h-full w-[80px] cursor-pointer items-center justify-center gap-1 rounded-lg px-4 py-2 text-sm font-normal text-white`}
       >
         {variant === 'left' && (
           <img src={PaginationButton} className="mt-0.5" />

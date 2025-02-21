@@ -44,10 +44,10 @@
 
   --color-header-bg: #FFFAFA;
   --color-primary-yellow: #d4a017;
-  --color-primary-blue: #243b4a;
-  --color-footer-bg: #A50021;
-  --color-font-primary: #5c4033;
-  --color-primary-red: #A50021;
+  --color-primary-blue: #001F3F;
+  --color-footer-bg: #8B0000;
+  --color-font-primary: #5C4033;
+  --color-primary-red: #8B0000;
 }
 
 body {
@@ -72,7 +72,7 @@ body {
 }
 
 .border-opacity-20 {
-  border-color: rgba(36, 59, 74, 0.2); /* Assuming primary blue color with 20% opacity */
+  border-color: rgba(36, 59, 74, 0.2);
 }
 
 .font-weight-250 {
@@ -81,4 +81,56 @@ body {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+@media (min-width: 390px) {
+  .max-390 {
+   width: 163px;
+   height: 208px;
+  }
+}
+
+@media (min-width: 1090px) {
+  .max-1090-size {
+    height: 400px;
+    width: 318px;
+  }
+}
+
+
+@media (min-width: 560px) {
+  .min-560 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1090px) {
+  .max-1090 {
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+}
+
+@media (min-width: 1442px) {
+  .max-1081 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1090px) {
+  .max-1442-dp-none {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .max-770 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .max-560 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

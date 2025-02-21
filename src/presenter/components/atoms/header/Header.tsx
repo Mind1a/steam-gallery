@@ -12,11 +12,6 @@ export default function Header() {
     setIsPopupVisible(!isPopupVisible);
   };
 
-  const handleClosePopup = () => {
-    setIsPopupVisible(false);
-    setIsBurger1(true);
-  };
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 640) {
@@ -43,7 +38,7 @@ export default function Header() {
 
   return (
     <header className="bg-header-bg max-sm:bg-white flex w-full flex-row min-h-[72px] z-20">
-      <div className="mx-auto flex w-full max-w-[1442px] items-center justify-between px-12 py-4 max-sm:hidden">
+      <div className="mx-auto flex w-full max-w-[1442px] items-center justify-between px-12 max-lg:px-6 py-4 max-sm:hidden">
         <Link to="/" className="flex items-center">
           <img src={Logo} alt="Logo" />
         </Link>
@@ -52,23 +47,27 @@ export default function Header() {
           activeLinkClassName="text-primary-red font-semibold"
         />
       </div>
-      <div className="flex w-full max-w-[1442px] items-center justify-center sm:hidden z-20">
+      <div className="flex w-full max-w-[1442px] items-center justify-between sm:hidden z-20 px-5">
+        <Link to="/">
+          <img src={Logo} alt="Logo" />
+        </Link>
         <button onClick={handleBurgerClick}>
           <img src={isBurger1 ? Burger1 : Burger2} alt="BurgerMenu" />
         </button>
       </div>
-      {isPopupVisible && (
-        <>
-          <div className="fixed inset-0 top-[72px] bg-[#17171766] opacity-70 z-10 sm:hidden" onClick={handleClosePopup}></div>
-          <div className="absolute top-[76px] left-0 w-full h-[195px] bg-white shadow-lg z-20 transition-transform duration-300 transform translate-y-0 flex flex-col items-center justify-center sm:hidden">
-            <Navigation
-              linkClassName="text-primary-blue font-semibold"
-              activeLinkClassName="text-primary-red font-semibold"
-              isColumn={true}
-            />
-          </div>
-        </>
-      )}
+      <div
+        className={`fixed inset-0 bg-[#00000066] top-[72px] backdrop-blur-xs opacity-80 z-10 sm:hidden transition-opacity duration-300 ${!isPopupVisible ? 'hidden' : ''}`}
+        onClick={handleBurgerClick}
+      ></div>
+      <div
+        className={`absolute top-[76px] left-0 w-full bg-white shadow-lg z-20 sm:hidden transition-[max-height,opacity] duration-500 overflow-hidden flex flex-col items-center justify-center ${isPopupVisible ? 'max-h-[195px] opacity-100' : 'max-h-0 opacity-0'}`}
+      >
+        <Navigation
+          linkClassName="text-primary-blue font-semibold"
+          activeLinkClassName="text-primary-red font-semibold"
+          isColumn={true}
+        />
+      </div>
     </header>
   );
 }
