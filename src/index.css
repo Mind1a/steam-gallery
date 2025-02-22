@@ -42,26 +42,26 @@
 @theme {
   --font-nato: 'Nato-Sans' sans-serif;
 
-  --color-header-bg: #FFFAFA;
+  --color-header-bg: #fffafa;
   --color-primary-yellow: #d4a017;
-  --color-primary-blue: #001F3F;
-  --color-footer-bg: #8B0000;
-  --color-font-primary: #5C4033;
-  --color-primary-red: #8B0000;
+  --color-primary-blue: #001f3f;
+  --color-footer-bg: #8b0000;
+  --color-font-primary: #5c4033;
+  --color-primary-red: #8b0000;
 }
-
-body {
-  @apply font-nato;
+body,
+#root {
+  @apply font-nato flex min-h-screen flex-col bg-[#F9FAFB] antialiased;
 }
 
 .slick-dots li button:before {
   font-size: 16px !important;
-  color: #FFFAFA !important;
+  color: #fffafa !important;
   opacity: 1 !important;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #A50021 !important;
+  color: #a50021 !important;
 }
 
 @media (min-width: 1442px) {
@@ -85,8 +85,8 @@ body {
 
 @media (min-width: 390px) {
   .max-390 {
-   width: 163px;
-   height: 208px;
+    width: 163px;
+    height: 208px;
   }
 }
 
@@ -97,7 +97,6 @@ body {
   }
 }
 
-
 @media (min-width: 560px) {
   .min-560 {
     grid-template-columns: repeat(3, 1fr);
@@ -107,7 +106,6 @@ body {
 @media (max-width: 1090px) {
   .max-1090 {
     grid-template-columns: repeat(4, 1fr);
-
   }
 }
 
