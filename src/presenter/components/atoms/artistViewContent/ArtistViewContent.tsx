@@ -1,14 +1,35 @@
 export default function ArtistViewContent() {
+  const images = [
+    '/assets/images/gallery-images/gallery-image-1.jpg',
+    '/assets/images/gallery-images/gallery-image-1.jpg',
+    '/assets/images/gallery-images/gallery-image-1.jpg',
+    '/assets/images/gallery-images/gallery-image-1.jpg',
+    '/assets/images/gallery-images/gallery-image-1.jpg',
+    '/assets/images/gallery-images/gallery-image-1.jpg',
+  ];
+
   return (
     <div className="flex flex-col flex-1 gap-12 px-[49px]">
       <section className="flex justify-between mt-[60px] max-w-[1442px]">
-        <div className="grid grid-cols-3 grid-rows-3">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
+        <div className="gap-x-6 gap-y-4 grid grid-cols-3 grid-rows-3 max-w-[598px] max-h-[540px]">
+          <div className="col-span-2 row-span-3 rounded-lg overflow-hidden">
+            <img
+              className="w-full h-full object-cover"
+              src={images[0]}
+              alt="gallery image"
+            />
+          </div>
+          {images.slice(3).map((image, i) => (
+            <div key={i} className="rounded-sm overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src={image}
+                alt="gallery image"
+              />
+            </div>
+          ))}
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 pl-10 max-w-[660px]">
           <h2 className="font-[600] text-[#8B0000] text-[32px]">პროდუქტი</h2>
           <p className="font-[300] text-[#333] text-[16px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -20,15 +41,21 @@ export default function ArtistViewContent() {
           </p>
         </div>
       </section>
-      <section className="flex flex-col gap-4 max-w-[1442px]">
+      <section className="flex flex-col gap-4 mb-[92px] max-w-[1442px]">
         <p className="text-[#5C4033] text-2xl uppercase">see also</p>
-        <div>
-          <div>CARD</div>
-          <div>CARD</div>
-          <div>CARD</div>
-          <div>CARD</div>
-          <div>CARD</div>
-          <div>CARD</div>
+        <div className="flex gap-6">
+          {images.map((image, i) => (
+            <div
+              key={i}
+              className="rounded-lg max-w-[204px] max-h-[272px] overflow-hidden"
+            >
+              <img
+                className="w-full h-full object-cover"
+                src={image}
+                alt="gallery image"
+              />
+            </div>
+          ))}
         </div>
       </section>
     </div>
