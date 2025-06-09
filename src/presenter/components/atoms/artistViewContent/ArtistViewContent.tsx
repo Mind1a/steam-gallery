@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 export default function ArtistViewContent() {
+  
   const images = [
     '/assets/images/gallery-images/gallery-image-1.jpg',
     '/assets/images/gallery-images/gallery-image-2.jpg',
@@ -23,14 +24,14 @@ export default function ArtistViewContent() {
               alt="gallery image"
             />
           </div>
-          {images.slice(3).map((image, i) => (
+          {images.slice(3).map((image) => (
             <div
-              key={i}
+              key={image}
               onClick={() => setGalleryMain(image)}
               className="rounded-sm overflow-hidden cursor-pointer"
             >
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover aspect-[3/4]"
                 src={image}
                 alt="gallery image"
               />
@@ -54,13 +55,13 @@ export default function ArtistViewContent() {
       <section className="flex flex-col gap-2 md:gap-4 mb-8 md:mb-[92px] max-w-[1442px]">
         <p className="text-[#5C4033] text-2xl uppercase">see also</p>
         <div className="md:flex gap-4 md:gap-6 grid grid-cols-2">
-          {images.map((image, i) => (
+          {images.map((image) => (
             <div
-              key={i}
-              className="rounded-lg max-w-full md:max-w-[204px] max-h-full md:max-h-[272px] overflow-hidden"
+              key={image}
+              className="rounded-lg w-full md:max-w-[204px] max-h-[208px] md:max-h-[272px] overflow-hidden"
             >
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover aspect-[3/4]"
                 src={image}
                 alt="gallery image"
               />
