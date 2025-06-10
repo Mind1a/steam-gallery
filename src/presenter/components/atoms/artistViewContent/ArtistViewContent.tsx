@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { GalleryItemsInner } from '../../../assets';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function ArtistViewContent() {
   // ------- id for current item from dynamic routing ----------//
@@ -62,16 +62,19 @@ export default function ArtistViewContent() {
         <p className="text-[#5C4033] text-2xl uppercase">see also</p>
         <div className="md:flex gap-4 md:gap-6 grid grid-cols-2">
           {GalleryItemsInner.slice(6).map((item) => (
-            <div
+            <Link
+              className="md:basis-[204px]"
+              to={`/artistView/${item.id}`}
               key={item.id}
-              className="rounded-lg overflow-hidden md:basis-[204px]"
             >
-              <img
-                className="w-full h-full object-cover aspect-[3/4]"
-                src={item.image}
-                alt="gallery item"
-              />
-            </div>
+              <div className="opacity-80 hover:opacity-100 rounded-lg overflow-hidden transition-opacity duration-200">
+                <img
+                  className="w-full h-full object-cover aspect-[3/4]"
+                  src={item.image}
+                  alt="gallery item"
+                />
+              </div>
+            </Link>
           ))}
         </div>
       </section>
