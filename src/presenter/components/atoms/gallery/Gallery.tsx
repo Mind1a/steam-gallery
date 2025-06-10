@@ -1,4 +1,4 @@
-import { GalleryItems } from '../../../assets/index';
+import { GalleryItemsInner } from '../../../assets/index';
 import { useState, useEffect } from 'react';
 import Pagination from '../pagination/Pagination';
 import { Link } from 'react-router-dom';
@@ -18,10 +18,10 @@ export default function Gallery() {
       window.removeEventListener('resize', updateIllustrationsPerPage);
   }, []);
 
-  const totalPages = Math.ceil(GalleryItems.length / illustrationsPerPage);
+  const totalPages = Math.ceil(GalleryItemsInner.length / illustrationsPerPage);
   const [currentPage, setCurrentPage] = useState<number>(1);
 
-  const currentIllustrations = GalleryItems.slice(
+  const currentIllustrations = GalleryItemsInner.slice(
     (currentPage - 1) * illustrationsPerPage,
     currentPage * illustrationsPerPage
   );
@@ -37,8 +37,8 @@ export default function Gallery() {
           გალერეა
         </p>
         <div className="gap-6 grid grid-cols-2 mb-6 min-560 max-1081 max-1090 max-770 max-560">
-          {currentIllustrations.map((item, index) => (
-            <Link to="artistView" key={index}>
+          {currentIllustrations.map((item) => (
+            <Link to={`/artistView/${item.id}`} key={item.id}>
               <div className="relative w-[133px] h-[183px] overflow-hidden max-390 max-1090-size">
                 <img
                   src={item.image}

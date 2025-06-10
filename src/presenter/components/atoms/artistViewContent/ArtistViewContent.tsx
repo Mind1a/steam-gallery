@@ -1,17 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { GalleryItemsInner } from '../../../assets';
+import { useParams } from 'react-router-dom';
 
 export default function ArtistViewContent() {
-  
-  const images = [
-    '/assets/images/gallery-images/gallery-image-1.jpg',
-    '/assets/images/gallery-images/gallery-image-2.jpg',
-    '/assets/images/gallery-images/gallery-image-3.jpg',
-    '/assets/images/gallery-images/gallery-image-4.jpg',
-    '/assets/images/gallery-images/gallery-image-5.jpg',
-    '/assets/images/gallery-images/gallery-image-6.jpg',
-  ];
+  // ------- id for current item from dynamic routing ----------//
+  const { id } = useParams<{ id: string }>();
 
-  const [galleryMain, setGalleryMain] = useState(images[0]);
+  // ------- states for defining current item and main image ----------//
+  const [galleryMain, setGalleryMain] = useState(GalleryItemsInner[0].image);
+  const [currentItem, setCurrentItem] = useState(
+    GalleryItemsInner.find((item) => item.id === id) || GalleryItemsInner[0]
+  );
+
+  // ------- handling items change deppending on router id ----------//
+  useEffect(() => {
+    const fountItem = GalleryItemsInner.find((item) => item.id === id);
+    if (fountItem) {
+      setCurrentItem(fountItem);
+      setGalleryMain(fountItem.image);
+    } else {
+      setCurrentItem(GalleryItemsInner[0]);
+      setGalleryMain(GalleryItemsInner[0].image);
+    }
+  }, [id]);
 
   return (
     <div className="flex flex-col flex-1 gap-6 md:gap-12 px-6 lg:px-[49px]">
@@ -24,46 +35,41 @@ export default function ArtistViewContent() {
               alt="gallery image"
             />
           </div>
-          {images.slice(3).map((image) => (
+          {GalleryItemsInner.slice(0, 3).map((item) => (
             <div
-              key={image}
-              onClick={() => setGalleryMain(image)}
+              key={item.id}
+              onClick={() => setGalleryMain(item.image)}
               className="rounded-sm overflow-hidden cursor-pointer"
             >
               <img
                 className="w-full h-full object-cover aspect-[3/4]"
-                src={image}
-                alt="gallery image"
+                src={item.image}
+                alt="gallery item"
               />
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-2 md:gap-4 md:pl-10 max-w-[660px]">
           <h2 className="font-[600] text-[#8B0000] md:text-[32px] text-2xl">
-            პროდუქტი
+            {currentItem?.title}
           </h2>
           <p className="font-[300] text-[#333] text-[16px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis q~ias error harum maxime
-            adipisci amet laborum. Perspiciatis
+            {currentItem?.description}
           </p>
         </div>
       </section>
       <section className="flex flex-col gap-2 md:gap-4 mb-8 md:mb-[92px] max-w-[1442px]">
         <p className="text-[#5C4033] text-2xl uppercase">see also</p>
         <div className="md:flex gap-4 md:gap-6 grid grid-cols-2">
-          {images.map((image) => (
+          {GalleryItemsInner.slice(6).map((item) => (
             <div
-              key={image}
-              className="rounded-lg w-full md:max-w-[204px] max-h-[208px] md:max-h-[272px] overflow-hidden"
+              key={item.id}
+              className="rounded-lg md:max-w-[204px] md:max-h-[272px] overflow-hidden"
             >
               <img
                 className="w-full h-full object-cover aspect-[3/4]"
-                src={image}
-                alt="gallery image"
+                src={item.image}
+                alt="gallery item"
               />
             </div>
           ))}

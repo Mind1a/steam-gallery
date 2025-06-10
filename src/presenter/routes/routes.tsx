@@ -10,7 +10,7 @@ export default function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/artistView" element={<ArtistView />} />
+      <Route path="/artistView/:id" element={<ArtistView />} />
     </Routes>
   );
 }
