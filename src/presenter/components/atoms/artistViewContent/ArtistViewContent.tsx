@@ -27,7 +27,7 @@ export default function ArtistViewContent() {
   return (
     <div className="flex flex-col flex-1 gap-6 md:gap-12 px-6 lg:px-[49px]">
       <section className="flex md:flex-row flex-col justify-between gap-4 md:gap-0 mt-2 md:mt-[60px] max-w-[1442px]">
-        <div className="gap-2 md:gap-x-6 md:gap-y-4 grid grid-cols-3 md:grid-cols-4 grid-rows-4 md:grid-rows-3 md:max-w-[598px] max-h-[540px]">
+        <div className="gap-2 md:gap-x-6 md:gap-y-4 grid grid-cols-3 md:grid-cols-4 grid-rows-4 md:grid-rows-3 h-[540px] md:shrink-0 md:basis-[44%]">
           <div className="col-span-3 row-span-3 rounded-lg overflow-hidden cursor-pointer">
             <img
               className="w-full h-full object-cover"
@@ -49,7 +49,7 @@ export default function ArtistViewContent() {
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-2 md:gap-4 md:pl-10 max-w-[660px]">
+        <div className="flex flex-col gap-2 md:gap-4 md:basis-[49%]">
           <h2 className="font-[600] text-[#8B0000] md:text-[32px] text-2xl">
             {currentItem?.title}
           </h2>
@@ -64,7 +64,7 @@ export default function ArtistViewContent() {
           {GalleryItemsInner.slice(6).map((item) => (
             <div
               key={item.id}
-              className="rounded-lg md:max-w-[204px] md:max-h-[272px] overflow-hidden"
+              className="rounded-lg overflow-hidden md:basis-[204px]"
             >
               <img
                 className="w-full h-full object-cover aspect-[3/4]"
