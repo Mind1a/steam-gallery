@@ -14,10 +14,10 @@ export default function ArtistViewContent() {
 
   // ------- handling items change deppending on router id ----------//
   useEffect(() => {
-    const fountItem = GalleryItemsInner.find((item) => item.id === id);
-    if (fountItem) {
-      setCurrentItem(fountItem);
-      setGalleryMain(fountItem.image);
+    const foundItems = GalleryItemsInner.find((item) => item.id === id);
+    if (foundItems) {
+      setCurrentItem(foundItems);
+      setGalleryMain(foundItems.image);
     } else {
       setCurrentItem(GalleryItemsInner[0]);
       setGalleryMain(GalleryItemsInner[0].image);
@@ -26,8 +26,9 @@ export default function ArtistViewContent() {
 
   return (
     <div className="flex flex-col flex-1 gap-6 md:gap-12 px-6 lg:px-[49px]">
+      {/* Upper section with images gallery and product info */}
       <section className="flex md:flex-row flex-col justify-between gap-4 md:gap-0 mt-2 md:mt-[60px] max-w-[1442px]">
-        <div className="gap-2 md:gap-x-6 md:gap-y-4 grid grid-cols-3 md:grid-cols-4 grid-rows-4 md:grid-rows-3 h-[540px] md:shrink-0 md:basis-[44%]">
+        <div className="gap-2 lg:gap-x-6 lg:gap-y-4 grid grid-cols-3 lg:grid-cols-4 grid-rows-4 lg:grid-rows-3 h-[562px] lg:h-[540px] lg:shrink-0 lg:basis-[44%]">
           <div className="col-span-3 row-span-3 rounded-lg overflow-hidden cursor-pointer">
             <img
               className="w-full h-full object-cover"
@@ -39,18 +40,18 @@ export default function ArtistViewContent() {
             <div
               key={item.id}
               onClick={() => setGalleryMain(item.image)}
-              className="rounded-sm overflow-hidden cursor-pointer"
+              className={`cursor-pointer overflow-hidden rounded-sm ${galleryMain === item.image ? 'ring-footer-bg ring-2' : ''}`}
             >
               <img
-                className="w-full h-full object-cover aspect-[3/4]"
+                className="w-full h-full object-cover aspect-[3/4] hover:scale-[1.03] transition-transform"
                 src={item.image}
-                alt="gallery item"
+                alt={item.title}
               />
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-2 md:gap-4 md:basis-[49%]">
-          <h2 className="font-[600] text-[#8B0000] md:text-[32px] text-2xl">
+          <h2 className="font-[600] text-footer-bg md:text-[32px] text-2xl">
             {currentItem?.title}
           </h2>
           <p className="font-[300] text-[#333] text-[16px]">
@@ -58,8 +59,9 @@ export default function ArtistViewContent() {
           </p>
         </div>
       </section>
+      {/* Bottom section with 'See also' elements */}
       <section className="flex flex-col gap-2 md:gap-4 mb-8 md:mb-[92px] max-w-[1442px]">
-        <p className="text-[#5C4033] text-2xl uppercase">see also</p>
+        <p className="text-font-primary text-2xl uppercase">see also</p>
         <div className="md:flex gap-4 md:gap-6 grid grid-cols-2">
           {GalleryItemsInner.slice(6).map((item) => (
             <Link
@@ -67,11 +69,11 @@ export default function ArtistViewContent() {
               to={`/artistView/${item.id}`}
               key={item.id}
             >
-              <div className="opacity-80 hover:opacity-100 rounded-lg overflow-hidden transition-opacity duration-200">
+              <div className="bg-black rounded-lg overflow-hidden">
                 <img
-                  className="w-full h-full object-cover aspect-[3/4]"
+                  className="opacity-40 hover:opacity-100 w-full h-full object-cover aspect-[3/4] hover:scale-[1.03] transition-all duration-300"
                   src={item.image}
-                  alt="gallery item"
+                  alt={item.title}
                 />
               </div>
             </Link>
