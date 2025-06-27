@@ -1,7 +1,8 @@
-import { GalleryItemsInner } from '../../../assets/index';
+// import { GalleryItemsInner } from '../../../assets/index';
 import { useState, useEffect } from 'react';
 import Pagination from '../pagination/Pagination';
 import { Link } from 'react-router-dom';
+import { ChildrenItems } from '../../../assets';
 
 export default function Gallery() {
   const [illustrationsPerPage, setIllustrationsPerPage] = useState<number>(8);
@@ -18,10 +19,10 @@ export default function Gallery() {
       window.removeEventListener('resize', updateIllustrationsPerPage);
   }, []);
 
-  const totalPages = Math.ceil(GalleryItemsInner.length / illustrationsPerPage);
+  const totalPages = Math.ceil(ChildrenItems.length / illustrationsPerPage);
   const [currentPage, setCurrentPage] = useState<number>(1);
 
-  const currentIllustrations = GalleryItemsInner.slice(
+  const currentIllustrations = ChildrenItems.slice(
     (currentPage - 1) * illustrationsPerPage,
     currentPage * illustrationsPerPage
   );
@@ -41,7 +42,7 @@ export default function Gallery() {
             <Link to={`/artistView/${item.id}`} key={item.id}>
               <div className="relative w-[133px] h-[183px] overflow-hidden max-390 max-1090-size">
                 <img
-                  src={item.image}
+                  src={item.images[0]}
                   alt={item.title}
                   className="shadow-[0px_4px_10px_0px_#88787833] rounded-lg w-full h-full object-cover"
                 />

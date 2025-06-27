@@ -4,8 +4,8 @@ import Gallery from '../components/atoms/gallery/Gallery';
 export default function Home() {
   return (
     <>
-      <Slider></Slider>
-      <Gallery></Gallery>
+      <Slider />
+      <Gallery />
       <div className="flex-1"></div>
     </>
   );
