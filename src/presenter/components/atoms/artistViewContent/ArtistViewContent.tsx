@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { GalleryItemsInner } from '../../../assets';
+import { ChildrenItems, ChildrenItemsType } from '../../../assets';
 import { Link, useParams } from 'react-router-dom';
 
 export default function ArtistViewContent() {
@@ -7,22 +7,21 @@ export default function ArtistViewContent() {
   const { id } = useParams<{ id: string }>();
 
   // ------- states for defining current item and main image ----------//
-  const [galleryMain, setGalleryMain] = useState(GalleryItemsInner[0].image);
-  const [currentItem, setCurrentItem] = useState(
-    GalleryItemsInner.find((item) => item.id === id) || GalleryItemsInner[0]
-  );
+  const [galleryMain, setGalleryMain] = useState<string>();
+  const [currentItem, setCurrentItem] = useState<ChildrenItemsType>();
 
   // ------- handling items change deppending on router id ----------//
   useEffect(() => {
-    const foundItems = GalleryItemsInner.find((item) => item.id === id);
-    if (foundItems) {
-      setCurrentItem(foundItems);
-      setGalleryMain(foundItems.image);
-    } else {
-      setCurrentItem(GalleryItemsInner[0]);
-      setGalleryMain(GalleryItemsInner[0].image);
+    const foundItem = ChildrenItems.find((item) => item.id === id);
+    if (foundItem) {
+      setCurrentItem(foundItem);
+      setGalleryMain(foundItem.images?.[0]);
     }
   }, [id]);
+
+  console.log(currentItem);
+
+  if (!currentItem) return null;
 
   return (
     <div className="flex flex-col flex-1 gap-6 md:gap-12 px-6 lg:px-[49px]">
@@ -36,26 +35,42 @@ export default function ArtistViewContent() {
               alt="gallery image"
             />
           </div>
-          {GalleryItemsInner.slice(0, 3).map((item) => (
+          {currentItem.images.slice(0, 3).map((item) => (
             <div
-              key={item.id}
-              onClick={() => setGalleryMain(item.image)}
-              className={`cursor-pointer overflow-hidden rounded-sm ${galleryMain === item.image ? 'ring-footer-bg ring-2' : ''}`}
+              key={item}
+              onClick={() => setGalleryMain(item)}
+              className={`cursor-pointer overflow-hidden rounded-sm ${galleryMain === item ? 'ring-footer-bg ring-2' : ''}`}
             >
               <img
                 className="w-full h-full object-cover aspect-[3/4] hover:scale-[1.03] transition-transform"
-                src={item.image}
-                alt={item.title}
+                src={item}
+                alt={item}
               />
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-2 md:gap-4 md:basis-[49%]">
           <h2 className="font-[600] text-footer-bg md:text-[32px] text-2xl">
-            {currentItem?.title}
+            {currentItem.title}
           </h2>
           <p className="font-[300] text-[#333] text-[16px]">
-            {currentItem?.description}
+            {currentItem.description}
+          </p>
+          <p className="font-[300] text-[#333] md:text-[16px] text-lg">
+            <span className="font-[600] text-footer-bg">მოსწავლის სახელი:</span>{' '}
+            {currentItem.authorName}
+          </p>
+          <p className="font-[300] text-[#333] md:text-[16px] text-lg">
+            <span className="font-[600] text-footer-bg">სკოლა:</span>{' '}
+            {currentItem.authorSchool}
+          </p>
+          <p className="font-[300] text-[#333] md:text-[16px] text-lg">
+            <span className="font-[600] text-footer-bg">კლასი:</span>{' '}
+            {currentItem.authorClassGrade}
+          </p>
+          <p className="font-[300] text-[#333] md:text-[16px] text-lg">
+            <span className="font-[600] text-footer-bg">ელ.ფოსტა:</span>{' '}
+            {currentItem.authorEmail}
           </p>
         </div>
       </section>
@@ -63,7 +78,7 @@ export default function ArtistViewContent() {
       <section className="flex flex-col gap-2 md:gap-4 mb-8 md:mb-[92px] max-w-[1442px]">
         <p className="text-font-primary text-2xl uppercase">see also</p>
         <div className="md:flex gap-4 md:gap-6 grid grid-cols-2">
-          {GalleryItemsInner.slice(6).map((item) => (
+          {ChildrenItems.slice(0, 6).map((item) => (
             <Link
               className="md:basis-[204px]"
               to={`/artistView/${item.id}`}
@@ -72,7 +87,7 @@ export default function ArtistViewContent() {
               <div className="bg-black rounded-lg overflow-hidden">
                 <img
                   className="opacity-40 hover:opacity-100 w-full h-full object-cover aspect-[3/4] hover:scale-[1.03] transition-all duration-300"
-                  src={item.image}
+                  src={item.images[0]}
                   alt={item.title}
                 />
               </div>

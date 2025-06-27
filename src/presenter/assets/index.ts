@@ -140,7 +140,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
   },
   {
     id: '3',
-    images: ['/assets/images/students-images/giorgi-ichkiti/giorgi-1.jpg'],
+    images: ['/assets/images/students-images/giorgi-ichkiti/giorgi-1.png'],
     title: 'როსტევანმა მსახური გაგზავნა უცხო მოყმის ნახვის დროს',
     description:
       "In a serene riverside clearing, a white knight stands sentinel on the right side, his back turned. He is clad in chain armor and a traditional hat, with his sword resting at his side. Before him, on the left, sits a man in leather and a tiger-skin cape. The tranquil river flows behind them, merging history with nature's peace. The forest is slightly foggy, and the sky is white with a fog",
@@ -151,7 +151,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
   },
   {
     id: '4',
-    images: ['/assets/images/students-images/giorgi-ichkiti/giorgi-2.jpg'],
+    images: ['/assets/images/students-images/giorgi-ichkiti/giorgi-2.png'],
     title: 'უცხო მოყმის ნახვა',
     description:
       'Tarieli sitting on a rock by a river in a forest. He wears a tiger skin on his back, chain armor, and has a thick beard. His hair is short, and his face is sad with tears on his cheeks. The forest around him is dark and mysterious, with tall trees and mist rising from the water. There is waterfall in the background. The colors are muted, with deep golds and dark greens, creating a somber and powerful atmosphere, like an ancient legend',
@@ -162,7 +162,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
   },
   {
     id: '5',
-    images: ['/assets/images/students-images/giorgi-ichkiti/giorgi-3.jpg'],
+    images: ['/assets/images/students-images/giorgi-ichkiti/giorgi-3.png'],
     title: 'თინათინის დახასიათება',
     description:
       'Draw a princess from Georgia. Her name is Tinatini. She is wearing traditional Georgian clothing. She has a golden crown and is as pretty as the sun. She is wearing a white dress which looks like a Georgian dress. Behind her is an Orthodox church on the mountain. She has white-brownish hair and she is 20-30 years old. Behind her there is a castle too which is in Georgian style. She also has blue colored eyes. Her clothing has a golden theme',
