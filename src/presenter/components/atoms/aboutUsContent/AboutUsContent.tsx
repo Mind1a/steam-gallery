@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { AboutUs, AboutUs2 } from '../../../assets';
 
 export const AboutUsContent = () => {
@@ -32,9 +33,11 @@ export const AboutUsContent = () => {
                 თუ გსურთ მეტი გაიგოთ ჩვენს პროექტებზე, გთხოვთ დაგვიკავშირდეთ
                 ნებისმიერ დროს. ერთად შევქმნათ რაღაც განსაკუთრებული!
               </div>
-              <button className="hidden lg:flex justify-center items-center bg-primary-blue hover:bg-primary-red mt-[30px] py-3 rounded-lg w-full max-w-[176px] font-semibold text-[#FFFAFA] text-[16px] transition duration-200 cursor-pointer">
-                დაგვიკავშირდი
-              </button>
+              <Link to="/contact">
+                <button className="hidden lg:flex justify-center items-center bg-primary-blue hover:bg-primary-red mt-[30px] py-3 rounded-lg w-full max-w-[176px] font-semibold text-[#FFFAFA] text-[16px] transition duration-200 cursor-pointer">
+                  დაგვიკავშირდი
+                </button>
+              </Link>
             </div>
 
             <div className="hidden lg:flex justify-center items-center min-w-[432px] h-auto">
@@ -54,9 +57,11 @@ export const AboutUsContent = () => {
             ნებისმიერ დროს. ერთად შევქმნათ რაღაც განსაკუთრებული!
           </div>
         </div>
-        <button className="lg:hidden bg-primary-blue active:bg-primary-red py-3 rounded-lg w-full max-w-[342px] font-semibold text-[#FFFAFA] text-[16px]">
-          დაგვიკავშირდი
-        </button>
+        <Link to="/contact">
+          <button className="lg:hidden bg-primary-blue active:bg-primary-red py-3 rounded-lg w-full max-w-[342px] font-semibold text-[#FFFAFA] text-[16px]">
+            დაგვიკავშირდი
+          </button>
+        </Link>
       </div>
     </div>
   );
