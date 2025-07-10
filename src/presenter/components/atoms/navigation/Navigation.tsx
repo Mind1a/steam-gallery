@@ -7,7 +7,11 @@ interface NavigationProps {
   isColumn?: boolean;
 }
 
-export default function Navigation({ linkClassName = '', activeLinkClassName = '', isColumn = false }: NavigationProps) {
+export default function Navigation({
+  linkClassName = '',
+  activeLinkClassName = '',
+  isColumn = false,
+}: NavigationProps) {
   return (
     <nav className={` ${isColumn ? 'w-full' : ''}`}>
       <ul className={`flex ${isColumn ? 'flex-col text-center' : 'flex-row'}`}>
@@ -16,10 +20,12 @@ export default function Navigation({ linkClassName = '', activeLinkClassName = '
             key={link.id}
             to={`/${link.id === 'home' ? '' : link.id}`}
             className={({ isActive }) =>
-              `${linkClassName} ${isActive ? activeLinkClassName : ''}
-               ${isColumn ? 'contact border-b px-[20px] w-fullpx-[20px] flex justify-center items-center h-[65px] border-gray-500 ' :
-               `${link.id !== 'contact' ? 'border-r px-[20px]' : 'pl-[20px]'
-               }`
+              `${linkClassName} ${isActive ? activeLinkClassName : ''} ${
+                isColumn
+                  ? 'contact w-fullpx-[20px] flex h-[65px] items-center justify-center border-b border-gray-500 px-[20px]'
+                  : `${
+                      link.id !== 'contact' ? 'border-r px-[20px]' : 'pl-[20px]'
+                    }`
               }`
             }
           >

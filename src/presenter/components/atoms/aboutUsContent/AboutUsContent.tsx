@@ -3,62 +3,62 @@ import { AboutUs, AboutUs2 } from '../../../assets';
 
 export const AboutUsContent = () => {
   return (
-    <div className="flex flex-col flex-1">
-      <div className="relative mx-auto w-full max-w-[1442px] overflow-hidden slider-padding">
+    <div className="flex flex-1 flex-col">
+      <div className="slider-padding relative mx-auto w-full max-w-[1442px] overflow-hidden">
         <img src={AboutUs} alt="About Us Background" />
       </div>
-      <div className="flex flex-col flex-1 justify-center items-center gap-6 px-6 lg:px-12 py-8 max-w-[1442px]">
+      <div className="flex max-w-[1442px] flex-1 flex-col items-center justify-center gap-6 px-6 py-8 lg:px-12">
         <div className="flex flex-col gap-4">
-          <p className="lg:hidden mb-4 max-sm:mb-1 w-full text-font-primary font-light text-2xl text-left">
+          <p className="text-font-primary mb-4 w-full text-left text-2xl font-light max-sm:mb-1 lg:hidden">
             ჩვენ შესახებ
           </p>
           <div className="flex gap-4">
             <div className="flex flex-col justify-start gap-3">
-              <div className="hidden lg:flex mb-4 max-sm:mb-1 w-full text-font-primary font-light text-2xl text-left">
+              <div className="text-font-primary mb-4 hidden w-full text-left text-2xl font-light max-sm:mb-1 lg:flex">
                 ჩვენ შესახებ
               </div>
-              <div className="flex-1 max-sm:mb-1 w-full font-light text-[#333333] text-[16px] text-justify">
+              <div className="w-full flex-1 text-justify text-[16px] font-light text-[#333333] max-sm:mb-1">
                 ჩვენი გუნდი არის პროფესიონალების გაერთიანება, რომლის მიზანია
                 შექმნას თანამედროვე და ინოვაციური პროდუქტი, რომელიც პასუხობს
                 მომხმარებლის საჭიროებებს. ჩვენთვის მნიშვნელოვანია ხარისხი, ნდობა
                 და გრძელვადიანი ურთიერთობები.
               </div>
-              <div className="hidden lg:flex flex-1 max-sm:mb-1 w-full font-light text-[#333333] text-[16px] text-justify">
+              <div className="hidden w-full flex-1 text-justify text-[16px] font-light text-[#333333] max-sm:mb-1 lg:flex">
                 ჩვენი ხედვაა ვიყოთ ლიდერი ჩვენს სფეროში, წარმოვაჩინოთ კულტურა და
                 ხელოვნება თანამედროვე ტექნოლოგიების მეშვეობით. ჩვენს გუნდს
                 გამოარჩევს კრეატიულობა, ყურადღება დეტალებზე და მომხმარებელზე
                 ორიენტირებული მიდგომა.
               </div>
-              <div className="hidden lg:flex flex-1 max-sm:mb-1 w-full font-light text-[#333333] text-[16px] text-justify">
+              <div className="hidden w-full flex-1 text-justify text-[16px] font-light text-[#333333] max-sm:mb-1 lg:flex">
                 თუ გსურთ მეტი გაიგოთ ჩვენს პროექტებზე, გთხოვთ დაგვიკავშირდეთ
                 ნებისმიერ დროს. ერთად შევქმნათ რაღაც განსაკუთრებული!
               </div>
               <Link to="/contact">
-                <button className="hidden lg:flex justify-center items-center bg-primary-blue hover:bg-primary-red mt-[30px] py-3 rounded-lg w-full max-w-[176px] font-semibold text-[#FFFAFA] text-[16px] transition duration-200 cursor-pointer">
+                <button className="bg-primary-blue hover:bg-primary-red mt-[30px] hidden w-full max-w-[176px] cursor-pointer items-center justify-center rounded-lg py-3 text-[16px] font-semibold text-[#FFFAFA] transition duration-200 lg:flex">
                   დაგვიკავშირდი
                 </button>
               </Link>
             </div>
 
-            <div className="hidden lg:flex justify-center items-center min-w-[432px] h-auto">
+            <div className="hidden h-auto min-w-[432px] items-center justify-center lg:flex">
               <img
                 src={AboutUs2}
                 alt="ჩვენს შესახებ"
-                className="w-[432px] h-[353px]"
+                className="h-[353px] w-[432px]"
               />
             </div>
           </div>
 
-          <div className="lg:hidden mx-auto w-full max-w-[400px]">
+          <div className="mx-auto w-full max-w-[400px] lg:hidden">
             <img src={AboutUs2} alt="ჩვენს შესახებ" />
           </div>
-          <div className="lg:hidden flex-1 max-sm:mb-1 w-full font-light text-[#333333] text-[16px] text-justify">
+          <div className="w-full flex-1 text-justify text-[16px] font-light text-[#333333] max-sm:mb-1 lg:hidden">
             თუ გსურთ მეტი გაიგოთ ჩვენს პროექტებზე, გთხოვთ დაგვიკავშირდეთ
             ნებისმიერ დროს. ერთად შევქმნათ რაღაც განსაკუთრებული!
           </div>
         </div>
         <Link to="/contact">
-          <button className="lg:hidden bg-primary-blue active:bg-primary-red py-3 rounded-lg w-full max-w-[342px] font-semibold text-[#FFFAFA] text-[16px]">
+          <button className="bg-primary-blue active:bg-primary-red w-full max-w-[342px] rounded-lg py-3 text-[16px] font-semibold text-[#FFFAFA] lg:hidden">
             დაგვიკავშირდი
           </button>
         </Link>

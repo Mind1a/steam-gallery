@@ -54,13 +54,13 @@ export default function ArtistViewContent() {
   console.log(currentItem);
 
   return (
-    <div className="relative flex flex-col flex-1 gap-6 md:gap-12 px-6 lg:px-[49px]">
+    <div className="relative flex flex-1 flex-col gap-6 px-6 md:gap-12 lg:px-[49px]">
       {/* modal */}
       {openModal && (
         <GalleryModal images={currentItem.images} closeModal={closeModal} />
       )}
       {/* Upper section with images gallery and product info */}
-      <section className="flex md:flex-row flex-col justify-between gap-4 md:gap-0 mt-2 md:mt-[60px] max-w-[1442px]">
+      <section className="mt-2 flex max-w-[1442px] flex-col justify-between gap-4 md:mt-[60px] md:flex-row md:gap-0">
         <ArtistImagesGallery
           openModal={openModal}
           setOpenModal={setOpenModal}

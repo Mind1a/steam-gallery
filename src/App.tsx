@@ -4,7 +4,7 @@ import Header from './presenter/components/atoms/header/Header';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <Header />
       <Outlet />
       <Footer />

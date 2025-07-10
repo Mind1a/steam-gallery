@@ -18,13 +18,13 @@ export default function Pagination({
   };
 
   return (
-    <div className="flex justify-center items-center gap-1">
+    <div className="flex items-center justify-center gap-1">
       <PaginationButtons
         text="Back"
         variant="left"
         onClick={() => handlePageChange(currentPage - 1)}
       />{' '}
-      <div className="flex justify-center items-center gap-2 w-full">
+      <div className="flex w-full items-center justify-center gap-2">
         {Array.from({ length: totalPages }, (_, i) => (
           <button
             className={`text-font-primary cursor-pointer rounded-lg bg-white px-4 py-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.07)] ${

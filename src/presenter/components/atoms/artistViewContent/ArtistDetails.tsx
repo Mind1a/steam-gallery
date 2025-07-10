@@ -6,27 +6,27 @@ export default function ArtistDetails({
   currentItem: ChildrenItemsType;
 }) {
   return (
-    <div className="flex flex-col gap-2 md:gap-4 md:pl-5 md:basis-[49%]">
-      <h2 className="font-[600] text-footer-bg md:text-[32px] text-2xl">
+    <div className="flex flex-col gap-2 md:basis-[49%] md:gap-4 md:pl-5">
+      <h2 className="text-footer-bg text-2xl font-[600] md:text-[32px]">
         {currentItem.title}
       </h2>
-      <p className="font-[300] text-[#333] text-[16px]">
+      <p className="text-[16px] font-[300] text-[#333]">
         {currentItem.description}
       </p>
-      <p className="font-[300] text-[#333] md:text-[16px] text-lg">
-        <span className="font-[600] text-footer-bg">მოსწავლის სახელი:</span>{' '}
+      <p className="text-lg font-[300] text-[#333] md:text-[16px]">
+        <span className="text-footer-bg font-[600]">მოსწავლის სახელი:</span>{' '}
         {currentItem.authorName}
       </p>
-      <p className="font-[300] text-[#333] md:text-[16px] text-lg">
-        <span className="font-[600] text-footer-bg">სკოლა:</span>{' '}
+      <p className="text-lg font-[300] text-[#333] md:text-[16px]">
+        <span className="text-footer-bg font-[600]">სკოლა:</span>{' '}
         {currentItem.authorSchool}
       </p>
-      <p className="font-[300] text-[#333] md:text-[16px] text-lg">
-        <span className="font-[600] text-footer-bg">კლასი:</span>{' '}
+      <p className="text-lg font-[300] text-[#333] md:text-[16px]">
+        <span className="text-footer-bg font-[600]">კლასი:</span>{' '}
         {currentItem.authorClassGrade}
       </p>
-      <p className="font-[300] text-[#333] md:text-[16px] text-lg">
-        <span className="font-[600] text-footer-bg">ელ.ფოსტა:</span>{' '}
+      <p className="text-lg font-[300] text-[#333] md:text-[16px]">
+        <span className="text-footer-bg font-[600]">ელ.ფოსტა:</span>{' '}
         {currentItem.authorEmail}
       </p>
     </div>
