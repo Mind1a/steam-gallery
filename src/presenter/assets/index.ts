@@ -43,15 +43,15 @@ export type ImageItemInner = {
 
 export const SliderItems: ImageItem[] = [
   {
-    image: './assets/images/slider-image.png',
+    image: '/assets/images/students-images/merab-bortsvadze/merabi-4-1.jfif',
     title: 'slide 1',
   },
   {
-    image: './assets/images/slider-image.png',
+    image: '/assets/images/students-images/merab-bortsvadze/merabi-4-2.jfif',
     title: 'slide 2',
   },
   {
-    image: './assets/images/slider-image.png',
+    image: '/assets/images/students-images/merab-bortsvadze/merabi-4-3.jfif',
     title: 'slide 3',
   },
 ];
