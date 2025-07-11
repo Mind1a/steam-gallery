@@ -1,8 +1,8 @@
 // import { GalleryItemsInner } from '../../../assets/index';
 import { useState } from 'react';
 import Pagination from '../pagination/Pagination';
-import { Link } from 'react-router-dom';
 import { ChildrenItems } from '../../../assets';
+import GalleryIllustration from './GalleryIllustration';
 
 export default function Gallery() {
   const totalPages = Math.ceil(ChildrenItems.length / 9);
@@ -25,16 +25,7 @@ export default function Gallery() {
         </p>
         <div className="gap-6 grid grid-cols-2 md:grid-cols-3 mb-6">
           {currentIllustrations.map((item) => (
-            <Link to={`/artistView/${item.id}`} key={item.id}>
-              <div className="relative w-[133px] h-[183px] overflow-hidden max-390 max-1090-size">
-                <img
-                  src={item.images[0]}
-                  alt={item.title}
-                  className="shadow-[0px_4px_10px_0px_#88787833] rounded-lg w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 lg:bg-black opacity-40 hover:opacity-0 rounded-lg transition-opacity duration-300 max-1442-dp-none"></div>
-              </div>
-            </Link>
+            <GalleryIllustration key={item.id} item={item} />
           ))}
         </div>
         <Pagination
