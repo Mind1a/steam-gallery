@@ -1,12 +1,6 @@
 import { Link } from 'react-router-dom';
-import {
-  AboutUs,
-  AboutUs2,
-  Email,
-  Location,
-  FaceBook,
-  Instagram,
-} from '../../../assets';
+import { AboutUs, Email, Location, FaceBook, Instagram } from '../../../assets';
+import GoogleMap from './GoogleMap';
 
 export const ContactContent = () => {
   return (
@@ -16,7 +10,7 @@ export const ContactContent = () => {
       </div>
       <div className="flex flex-col flex-1 justify-center items-center gap-6 px-6 lg:px-12 py-8 max-w-[1442px]">
         <div className="flex flex-col gap-4">
-          <div className="flex gap-4">
+          <div className="flex md:flex-row flex-col gap-4">
             <div className="flex flex-col justify-start gap-3 min-h-[366px]">
               <div className="mb-4 max-sm:mb-1 w-full text-font-primary font-light text-2xl text-left">
                 კონტაქტი
@@ -26,8 +20,9 @@ export const ContactContent = () => {
                 დაგეხმაროთ! დაგვიკავშირდით ნებისმიერ დროს ქვემოთ მოცემული
                 საკონტაქტო საშუალებებით:
               </div>
-              <div className="lg:hidden mx-auto w-full max-w-[400px]">
-                <img src={AboutUs2} alt="ჩვენს შესახებ" />
+
+              <div className="md:hidden flex justify-center items-center min-w-[320px] h-auto">
+                <GoogleMap />
               </div>
               <div className="flex flex-col gap-8 w-full">
                 <div className="flex flex-col gap-4">
@@ -75,12 +70,8 @@ export const ContactContent = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden lg:flex justify-center items-center min-w-[432px] h-auto">
-              <img
-                src={AboutUs2}
-                alt="ჩვენს შესახებ"
-                className="w-[432px] h-[353px]"
-              />
+            <div className="hidden md:flex justify-center items-center min-w-[432px] h-auto">
+              <GoogleMap />
             </div>
           </div>
         </div>
