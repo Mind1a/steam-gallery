@@ -129,6 +129,8 @@ export const ChildrenItems: ChildrenItemsType[] = [
     authorEmail: 'andria.skhirtladze2011@gmail.com',
     authorSchool: 'მეორე საჯარო სკოლა',
     authorClassGrade: 'VIII კლასი',
+    description:
+      'შოთა რუსთაველის „ვეფხისტყაოსნის“ მიერ შთაგონებული შუა საუკუნეების ბრძოლის დრამატული სცენა - კაჟეთის ციხის აღება. სამი მამაცი ქართველი მეომარი გვერდიგვერდ დგას კლდოვან მთის უღელტეხილზე. მათ უკან კაჟეთის მძლავრი ქვის ციხე-სიმაგრე აღმართულა. მათ აცვიათ ტრადიციული ქართული აბჯარი, მოსასხამები ქარში უფრიალებთ და სახეზე მონდომება აღბეჭდიათ. ცა მზის ჩასვლის მანათობელ ფერებშია შეღებილი. ატმოსფერო დაძაბული და გმირულია, რაც განასახიერებს ერთიანობას, სიმამაცესა და სამართლიანობის ტრიუმფს. სცენა მდიდარია ისტორიული დეტალებითა და დრამატული ენერგიით, რაც ეხმიანება ქართული ეპოსის სულს.',
   },
   {
     id: '2',
@@ -137,13 +139,15 @@ export const ChildrenItems: ChildrenItemsType[] = [
     authorEmail: 'andria.skhirtladze2011@gmail.com',
     authorSchool: 'მეორე საჯარო სკოლა',
     authorClassGrade: 'VIII კლასი',
+    description:
+      'ერთი მარტოხელა შუა საუკუნეების ქართველი მეომარი სევდიანად დგას კაჟეთის ციხის კედლების წინ. გამოსახულება შთაგონებულია „ვეფხისტყაოსნის“ ლეგენდარული მომენტით. მას აცვია ტრადიციული ქართული აბჯარი და მტკიცედ უჭირავს ხმალი. მისი მოსასხამი და გრძელი თმა ქარში ფრიალებს. მის უკან ციხე-სიმაგრე აღმართულია ციცაბო მთის კლდეზე. განწყობა პოეტური და ძლიერია – გადმოსცემს გმირის შინაგან ძალას, თავგანწირვასა და შეუპოვრობას ბრძოლის წინ. კინემატოგრაფიული, ფერწერული სცენა, სავსე ემოციით, სიმბოლიკითა და ეპიკური შინაარსით.',
   },
   {
     id: '3',
     images: ['/assets/images/students-images/giorgi-ichkiti/giorgi-1.png'],
     title: 'როსტევანმა მსახური გაგზავნა უცხო მოყმის ნახვის დროს',
     description:
-      "In a serene riverside clearing, a white knight stands sentinel on the right side, his back turned. He is clad in chain armor and a traditional hat, with his sword resting at his side. Before him, on the left, sits a man in leather and a tiger-skin cape. The tranquil river flows behind them, merging history with nature's peace. The forest is slightly foggy, and the sky is white with a fog",
+      'მდინარის პირას მდებარე წყნარ გაკვეთილში, მარჯვენა მხარეს დარაჯად დგას თეთრი რაინდი, ზურგით შემობრუნებული. მას აცვია ჯაჭვის პერანგი და ტრადიციული ქუდი, ხმალი კი გვერდით უდევს. მის წინ, მარცხენა მხარეს, ზის მამაკაცი ტყავის სამოსითა და ვეფხვის ტყავის მოსასხამით. მათ უკან მშვიდი მდინარე მოედინება, რომელიც ისტორიას ბუნების სიმშვიდესთან აერთიანებს. ტყე ოდნავ ნისლიანია, ცა კი თეთრი ნისლით არის დაფარული.',
     authorName: 'გიორგი იჩქითი',
     authorEmail: 'ichkitigiorgi5@gmail.com',
     authorSchool: 'მეორე საჯარო სკოლა',
@@ -154,7 +158,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
     images: ['/assets/images/students-images/giorgi-ichkiti/giorgi-2.png'],
     title: 'უცხო მოყმის ნახვა',
     description:
-      'Tarieli sitting on a rock by a river in a forest. He wears a tiger skin on his back, chain armor, and has a thick beard. His hair is short, and his face is sad with tears on his cheeks. The forest around him is dark and mysterious, with tall trees and mist rising from the water. There is waterfall in the background. The colors are muted, with deep golds and dark greens, creating a somber and powerful atmosphere, like an ancient legend',
+      'ტარიელი ზის კლდეზე, მდინარის პირას, ტყეში. მას ზურგზე ვეფხვის ტყავი აფარია, აცვია ჯაჭვის პერანგი და აქვს სქელი წვერი. მისი თმა მოკლეა, სახე კი სევდიანი, ცრემლებით დასველებული ლოყებით. ირგვლივ ტყე ბნელი და იდუმალია, მაღალი ხეებითა და წყლიდან ამოსული ნისლით. უკანა პლანზე ჩანჩქერია. ფერები მდუმარეა, ღრმა ოქროსფერი და მუქი მწვანე ტონებით, რაც პირქუშ და მძლავრ ატმოსფეროს ქმნის, როგორც ძველი ლეგენდა.',
     authorName: 'გიორგი იჩქითი',
     authorEmail: 'ichkitigiorgi5@gmail.com',
     authorSchool: 'მეორე საჯარო სკოლა',
@@ -165,7 +169,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
     images: ['/assets/images/students-images/giorgi-ichkiti/giorgi-3.png'],
     title: 'თინათინის დახასიათება',
     description:
-      'Draw a princess from Georgia. Her name is Tinatini. She is wearing traditional Georgian clothing. She has a golden crown and is as pretty as the sun. She is wearing a white dress which looks like a Georgian dress. Behind her is an Orthodox church on the mountain. She has white-brownish hair and she is 20-30 years old. Behind her there is a castle too which is in Georgian style. She also has blue colored eyes. Her clothing has a golden theme',
+      'დახატე ქართველი პრინცესა. მისი სახელია თინათინი. მას აცვია ტრადიციული ქართული სამოსი. მას აქვს ოქროს გვირგვინი და მზესავით ლამაზია. მას აცვია თეთრი კაბა, რომელიც ქართულ კაბას ჰგავს. მის უკან მთაზე მართლმადიდებლური ეკლესიაა. მას აქვს თეთრ-მოყავისფრო თმა და ის 20-30 წლისაა. მის უკან ასევე არის ციხე, რომელიც ქართულ სტილშია. მას ასევე აქვს ცისფერი თვალები. მის სამოსს ოქროსფერი თემა აქვს.',
     authorName: 'გიორგი იჩქითი',
     authorEmail: 'ichkitigiorgi5@gmail.com',
     authorSchool: 'მეორე საჯარო სკოლა',
@@ -179,7 +183,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
     ],
     title: 'ნადირობის სცენა',
     description:
-      'The hunting party, including Avtandil and other knights, is eager and well-prepared. They ride magnificent horses and are accompanied by loyal hounds. The knights, dressed in richly decorated hunting attire, fan out through the forest, each displaying their mastery of the hunt. They carry finely crafted weapons—bows, arrows, and spears—ready for action. Excitement builds as the prey is spotted. A thrilling chase ensues, showcasing the speed and agility of both hunters and their quarry. There are a few archers with bows too. The knights coordinate their efforts with shouts and signals, demonstrating their skill and camaraderie. The prey, often a powerful deer or boar, races through the underbrush in a desperate bid for freedom. Avtandil leads the chase with determination and grace, embodying the ideals of bravery and skill. He is physically strong, has dark hair, wears chain armour.',
+      'სანადირო რაზმი, ავთანდილის და სხვა რაინდების ჩათვლით, სავსეა ენთუზიაზმით და კარგად მომზადებული. ისინი ამხედრებულნი არიან დიდებულ ცხენებზე და თან ახლავთ ერთგული მონადირე ძაღლები. რაინდები, მდიდარი ორნამენტებით მორთულ სანადირო სამოსში გამოწყობილნი, ტყეში იშლებიან, თითოეული მათგანი ნადირობის ოსტატობას ავლენს. მათ ატარებენ დახვეწილად დამზადებულ იარაღს — მშვილდებს, ისრებს და შუბებს — მზად მოქმედებისთვის. მღელვარება მატულობს ნადირის შემჩნევისას. იწყება ამაღელვებელი დევნა, რაც მონადირეებისა და მათი ნადირის სისწრაფესა და მოქნილობას აჩვენებს. ასევე არის რამდენიმე მშვილდოსანიც მშვილდებით. რაინდები კოორდინაციას უწევენ თავიანთ ძალისხმევას შეძახილებითა და სიგნალებით, რითაც თავიანთ ოსტატობასა და ამხანაგობას ამტკიცებენ. ნადირი, ხშირად ძლიერი ირემი ან ტახი, სასოწარკვეთილი თავისუფლებისთვის ბრძოლაში ტყის ბუჩქნარში მიქრის. ავთანდილი დევნას მონდომებითა და მოხდენილად უძღვება, რაც სიმამაცისა და ოსტატობის იდეალებს განასახიერებს. ის ფიზიკურად ძლიერია, აქვს მუქი თმა, აცვია ჯაჭვის აბჯარი.',
     authorName: 'მერაბ ბორცვაძე',
     authorEmail: 'merabibortsvadze@gmail.com',
     authorPhoneNumber: '591 05 08 46',
@@ -204,7 +208,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
     id: '8',
     images: ['/assets/images/students-images/merab-bortsvadze/merabi-3-1.jfif'],
     description:
-      "Smoke chokes the night as flames devour the fortress, its blackened walls trembling under the assault. Horses rear, steel clatters, blood darkens the earth. firelight dancing in fearful eyes as fate nears its reckoning. There is a fortress, The fortress looms, its blackened walls scarred by time. Torches flicker, shadows stretching over iron gates stained with blood. Warriors charge—one - Tall and fierce, his wild black curls frame fire.His dark cloak flows over bronze armor. second - Slender yet strong.His dark curls, dusted with sweat. third – Broad-shouldered and powerful. His heavy armor bears battle scars, his gaze fierce and unshaken. they are together and are facing towards the fortress. we can see them from the back, we can't see their faces.",
+      'კვამლი ახრჩობს ღამეს, ცეცხლი კი ციხე-სიმაგრეს შთანთქავს, მისი გაშავებული კედლები იერიშის ქვეშ კანკალებს. ცხენები ყალყზე დგებიან, ფოლადი ჟღარუნებს, სისხლი აბნელებს მიწას. ცეცხლის შუქი შეშინებულ თვალებში ცეკვავს, როცა ბედისწერა სამსჯავროს უახლოვდება. არის ციხე-სიმაგრე, რომელიც პირქუშად აღმართულა, მისი გაშავებული კედლები დროის ნაიარევებით არის დაფარული. ჩირაღდნები ციმციმებენ, ჩრდილები კი სისხლით შეღებილ რკინის ჭიშკრებზე იჭიმება. მეომრები იერიშზე მიდიან: პირველი — მაღალი და მრისხანე, მისი ველური შავი ხვეული თმა ცეცხლს უგავს. მისი მუქი მოსასხამი ბრინჯაოს აბჯარზე ფრიალებს. მეორე — გამხდარი, მაგრამ ძლიერი. მისი მუქი ხვეული თმა ოფლით არის დანამული. მესამე — განიერმხრებიანი და ძლევამოსილი. მის მძიმე აბჯარზე ბრძოლის ნაიარევები ემჩნევა, მისი მზერა მრისხანე და ურყევია. ისინი ერთად დგანან და ციხე-სიმაგრისკენ არიან მიმართულნი. მათ ზურგიდან ვხედავთ, სახეები არ უჩანთ.',
     authorName: 'მერაბ ბორცვაძე',
     authorEmail: 'merabibortsvadze@gmail.com',
     authorPhoneNumber: '591 05 08 46',
@@ -220,7 +224,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
     ],
     title: 'ანდერძის წერის ეპიზოდი "ვეფხისტყაოსნიდან"',
     description:
-      'Avtandil sat in his dimly lit chamber, a candle flickering beside him. The walls, adorned with golden tapestries, cast long shadows. Dressed in a armor, his face was solemn, eyes filled with longing. He dipped his quill in ink, writing to Tinatin. Outside, the moon bathed the palace gardens in silver light, rustling leaves whispering farewell. His loyal servant stood nearby, ready to deliver the letter. Every word carried love and sorrow—his heart bound to Tinatin, yet honor calling him away into the unknown.',
+      'ავთანდილი თავის ბუნდოვნად განათებულ ოთახში იჯდა, გვერდით სანთელი ციმციმებდა. კედლები, ოქროსფერი გობელენებით მორთული, გრძელ ჩრდილებს აჩენდა. აბჯარში გამოწყობილი, მისი სახე სერიოზული იყო, თვალები კი მონატრებით სავსე. მან კალამი მელანში ჩააწო და თინათინს სწერდა. გარეთ, მთვარის შუქი ვერცხლისფრად აბანავებდა სასახლის ბაღებს, შრიალა ფოთლები კი დამშვიდობების ჩურჩულს გამოსცემდნენ. მისი ერთგული მსახური იქვე იდგა, მზად წერილის ჩასაბარებლად. ყოველი სიტყვა სიყვარულსა და მწუხარებას ატარებდა — მისი გული თინათინთან იყო შეკრული, მაგრამ ღირსება უცნობისკენ უხმობდა.',
     authorName: 'მერაბ ბორცვაძე',
     authorEmail: 'merabibortsvadze@gmail.com',
     authorPhoneNumber: '591 05 08 46',
@@ -232,7 +236,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
     images: ['/assets/images/students-images/merab-bortsvadze/merabi-5-1.jfif'],
     title: 'თინათინის გამეფების ეპიზოდი',
     description:
-      'The grand hall shimmered with golden light, torches casting flickering shadows on towering marble columns. The high ceiling was adorned with intricate carvings of past kings, their solemn faces gazing down. A crimson carpet stretched towards a golden throne, where Tinatin stood, regal and poised. Her flowing gown, embroidered with silver threads, cascaded to the floor. A heavy jeweled crown rested on her dark braids. The old king, draped in royal robes, placed a hand upon her head in blessing. Around them, noblemen in silk and armor knelt, their swords gleaming. Outside, trumpets blared, and the city roared in celebration.',
+      'დიდი დარბაზი ოქროსფრად ბრწყინავდა, ჩირაღდნები კი მოციმციმე ჩრდილებს აჩენდნენ მაღალ მარმარილოს სვეტებზე. მაღალი ჭერი მორთული იყო წარსული მეფეების დახვეწილი ჩუქურთმებით, მათი სევდიანი სახეები ქვემოთ იყურებოდნენ. მეწამული ხალიჩა ოქროს ტახტისკენ იყო გაშლილი, სადაც თინათინი იდგა, დიდებული და აუღელვებელი. მისი ფართო კაბა, ვერცხლისფერი ძაფებით მოქარგული, იატაკზე ცვიოდა. მძიმე, ძვირფასი თვლებით შემკული გვირგვინი მის მუქ ნაწნავებზე იდო. მოხუცმა მეფემ, სამეფო მოსასხამში გახვეულმა, ხელი თავზე დაადო კურთხევის ნიშნად. მათ ირგვლივ, აბრეშუმსა და აბჯარში გამოწყობილი დიდებულები მუხლებზე იდგნენ, მათი ხმლები ბრწყინავდა. გარეთ, საყვირები გაისმა და ქალაქი ზეიმობდა.',
     authorName: 'მერაბ ბორცვაძე',
     authorEmail: 'merabibortsvadze@gmail.com',
     authorPhoneNumber: '591 05 08 46',
@@ -255,13 +259,15 @@ export const ChildrenItems: ChildrenItemsType[] = [
     authorEmail: 'butkhuzirati66@gmail.com',
     authorSchool: 'მეორე საჯარო სკოლა',
     authorClassGrade: 'VIII კლასი ',
+    description:
+      'ვეფხისტყაოსნიდან ქაჯეთის ციხის აღების სცენას, ეს არის ერთ-ერთი ყველაზე დრამატული და მნიშვნელოვანი ეპიზოდი პოემაში. მოკლედ, სცენა ასე განვითარდა: მას შემდეგ, რაც ნესტან-დარეჯანი ქაჯებმა მოიტაცეს, ტარიელი, ავთანდილი და ფრიდონი გადაწყვეტენ მის გადარჩენას და ქაჯეთის ციხეზე იერიშს. მომზადება და გეგმის შედგენა: გმირები საგულდაგულოდ ამზადებენ გეგმას. მათ იციან, რომ ციხე ძლიერ გამაგრებულია და მტრები მრავალრიცხოვანნი არიან. ისინი იყენებენ სამხედრო ეშმაკობას და მოულოდნელობის ეფექტს. იერიში ციხეზე: ფრიდონი საზღვაო გზით უახლოვდება ციხეს და ზღვიდან შედის ბრძოლაში თავისი ლაშქრით. ტარიელი და ავთანდილი ხმელეთიდან უტევენ, თუმცა ისინი ცდილობენ, თავდაპირველად მტრის ყურადღება ზღვაზე გადაიტანონ. თავგანწირული ბრძოლა: გმირები და მათი მეომრები სასტიკ ბრძოლას მართავენ ქაჯებთან. ბრძოლა აღწერილია ძალიან დინამიურად და სისხლიანად. ტარიელი და ავთანდილი უდიდეს მამაცობასა და მეომრულ ოსტატობას ავლენენ. ციხეში შეღწევა: გმირები ახერხებენ ციხის აღებას, მტრის დამარცხებას და ნესტან-დარეჯანის გათავისუფლებას. ეს სცენა არის გმირობის, ერთგულების, თავგანწირვისა და მეგობრობის სიმბოლო. იგი ხაზს უსვამს ქართული საბრძოლო სულისკვეთებას და რაინდულ ღირებულებებს. პოემაში დეტალურად არის აღწერილი თითოეული გმირის მონაწილეობა ბრძოლაში, მათი პირადი თავდადება და საბრძოლო სტრატეგია.',
   },
   {
     id: '12',
     images: ['/assets/images/students-images/rati-butkhuzi/rati-2-1.jpg'],
     title: 'სცენა ვეფხისტყაოსნიდან “ტარიელი მდინარის პირას”',
     description:
-      'Create an image of a medieval warrior, Tariel, sitting by a quiet riverbank under the soft glow of the moonlight. He is draped in a dark panther-skin cloak, symbolizing his noble yet tragic existence. His long, unkempt hair flows over his shoulders, and his sorrowful eyes gaze into the shimmering water, reflecting his grief. The river glistens as the moonlight dances upon its surface, surrounded by dense, shadowy forests that add a sense of solitude and melancholy. His sword rests beside him, half-buried in the grass, as if abandoned in his despair. Fireflies flicker around him, their soft glow enhancing the dreamlike and melancholic atmosphere. His posture is slumped, hands resting on his knees, his expression a mix of sorrow and deep contemplation. The scene should evoke a dramatic and emotional tone, capturing his loneliness and longing. The colors should be rich yet moody—deep blues, silvers, and muted greens—to emphasize the night setting and the weight of his emotions. The overall composition should feel cinematic, almost like a moment frozen in time, filled with sorrow and poetic beauty.',
+      'შექმენით შუა საუკუნეების მეომრის, ტარიელის გამოსახულება, რომელიც ზის მდინარის წყნარ ნაპირზე, მთვარის რბილი შუქის ქვეშ. მას აცვია მუქი ვეფხისტყაოსნის მოსასხამი, რაც მისი კეთილშობილური, მაგრამ ტრაგიკული არსებობის სიმბოლოა. მისი გრძელი, გაუპარსავი თმა მხრებზე ეფინება, სევდიანი თვალები კი მოციმციმე წყალს მისჩერებია, რაც მის მწუხარებას ასახავს. მდინარე ბრწყინავს, რადგან მთვარის შუქი მის ზედაპირზე ცეკვავს, გარშემო კი ხშირი, ჩრდილიანი ტყეები მარტოობისა და მელანქოლიის შეგრძნებას მატებს. მისი ხმალი მის გვერდით დევს, ნახევრად ჩამარხული ბალახში, თითქოს სასოწარკვეთილებაში მიტოვებული. ციცინათელები ციმციმებენ მის გარშემო, მათი რბილი ნათება აძლიერებს სიზმრისებრ და მელანქოლიურ ატმოსფეროს. მისი პოზა მოხრილია, ხელები მუხლებზე უწყვია, სახეზე კი მწუხარებისა და ღრმა ფიქრის ნარევია. სცენამ უნდა გამოიწვიოს დრამატული და ემოციური განწყობა, რაც მის მარტოობასა და მონატრებას გადმოსცემს. ფერები უნდა იყოს მდიდარი, მაგრამ პირქუში — მუქი ლურჯი, ვერცხლისფერი და მდუმარე მწვანე — რათა ხაზი გაესვას ღამის გარემოსა და მისი ემოციების სიმძიმეს. მთლიანი კომპოზიცია კინემატოგრაფიულად უნდა გამოიყურებოდეს, თითქოს დროში გაყინული მომენტი იყოს, სავსე მწუხარებითა და პოეტური სილამაზით.',
     authorName: 'რატი ბუთხუზი',
     authorEmail: 'butkhuzirati66@gmail.com',
     authorSchool: 'მეორე საჯარო სკოლა',
@@ -288,6 +294,9 @@ export const ChildrenItems: ChildrenItemsType[] = [
     authorEmail: 'ratigigauri85@gmail.com',
     authorSchool: 'მეორე საჯარო სკოლა',
     authorClassGrade: 'VIII კლასი ',
+    title: 'ქაჯეთის ციხის აღება',
+    description:
+      "ეს გამოსახულება არის 'ვეფხისტყაოსნის' ის ეპიზოდი, სადაც ტარიელი, ავთანდილი და ფრიდონი თავიანთ ლაშქართან ერთად ქაჯეთის ციხის ასაღებად მიდიან ნესტან-დარეჯანის გასათავისუფლებლად. გმირების მზადყოფნა: რაინდების მონდომებული პოზა და წინსვლა ასახავს მათ უშიშრობასა და მზადყოფნას, შეებრძოლონ მტერს. ციხე-სიმაგრე: ციხის არსებობა პირდაპირ მიანიშნებს ქაჯეთის ციხეზე, რომელიც პოემის ერთ-ერთი საკვანძო ობიექტია. მასშტაბი: მრავალრიცხოვანი ლაშქარი ხაზს უსვამს ბრძოლის მასშტაბურობასა და სირთულეს, რაც შეესაბამება პოემაში აღწერილ მოვლენებს. დრამატული განათება: მზის ჩასვლის ან ამოსვლის ფერები ქმნის მძაფრ და გმირულ ატმოსფეროს, რაც კარგად გადმოსცემს გადამწყვეტი ბრძოლის წინარე დაძაბულობას და მნიშვნელობას.",
   },
   {
     id: '15',
@@ -318,7 +327,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
     ],
     title: 'ქაჯეთის ციხის აღება',
     description:
-      'A powerful Georgian warrior from the 12th century, Fridon, is undertaking a perilous mission to infiltrate the notorious Kajeti Castle, often referred to in legends as the stronghold of demons. The scene unfolds under the cover of night, with the towering stone walls of the castle looming ominously in the distance. Fridon, a formidable fighter, moves with purpose across a rope that stretches from a mountain to the castle. In his hand, he grips a traditional Georgian fighter’s sword, the khmali, with a curved hilt and a slightly curved blade. The sword, a symbol of the warrior’s heritage, glints in the dim light as he crosses. His medium-length black hair flows in the wind, and his small, straight mustache adds to his fierce expression. Fridon’s muscular build and strength are evident as he balances skillfully on the rope, undeterred by the dangers that lie ahead. Kajeti Castle, known for its eerie reputation, stands as a fortress filled with danger, home to the terrifying demons or ‘kaqebi’ of legend. Fridon’s face shows unyielding resolve as he approaches the stronghold, aware of the supernatural threats that await him but determined to succeed.',
+      'XII საუკუნის ძლევამოსილი ქართველი მეომარი, ფრიდონი, სახიფათო მისიას ასრულებს, რათა შეაღწიოს საშინელ ქაჯეთის ციხეში, რომელსაც ლეგენდებში ხშირად დემონების ციტადელად მოიხსენიებენ. სცენა ღამის საფარქვეშ ვითარდება, ციხის მაღალი ქვის კედლები საშიშად მოჩანს შორიდან. ფრიდონი, ძლიერი მებრძოლი, მიზანმიმართულად მოძრაობს თოკზე, რომელიც მთიდან ციხემდეა გადაჭიმული. ხელში მას უჭირავს ტრადიციული ქართული საბრძოლო ხმალი – ხმალი მოხრილი ტარითა და ოდნავ მოხრილი პირით. ხმალი, მეომრის მემკვიდრეობის სიმბოლო, მკრთალ შუქზე ელვარებს გადასვლისას. მისი საშუალო სიგრძის შავი თმა ქარში ფრიალებს, მისი პატარა, სწორი ულვაში კი მის მრისხანე გამომეტყველებას კიდევ უფრო ამძაფრებს. ფრიდონის დაკუნთული აღნაგობა და ძალა აშკარაა, როდესაც ის ოსტატურად ინარჩუნებს წონასწორობას თოკზე, შეუპოვრად უმკლავდება წინ არსებულ საფრთხეებს. ქაჯეთის ციხე, თავისი შემზარავი რეპუტაციით ცნობილი, საშიშროებით სავსე ციხე-სიმაგრედ დგას, ლეგენდის საშინელი დემონების, ანუ "ქაჯების" სამყოფელი. ფრიდონის სახე ურყევ გადაწყვეტილებას გამოხატავს, როდესაც ის უახლოვდება ციტადელს, იცის რა მოსალოდნელი ზებუნებრივი საფრთხეები, მაგრამ მტკიცედ აქვს გადაწყვეტილი წარმატების მიღწევა.',
     authorName: 'საბა ჯოლბორდი',
     authorEmail: 'jolbordisaba@gmail.com',
     authorPhoneNumber: '599 54 22 17',
@@ -337,6 +346,8 @@ export const ChildrenItems: ChildrenItemsType[] = [
     authorPhoneNumber: '599 54 22 17',
     authorSchool: 'მეორე საჯარო სკოლა',
     authorClassGrade: 'VIII კლასი ',
+    description:
+      'თინათინი ტახტზე: ფოტოს ცენტრში თინათინია, რომელიც სამეფო ტახტზე ზის. ის გამეფებისთვის შესაფერის, მდიდრულ, ოქროსფრად მოქარგულ სამოსშია გამოწყობილი, რაც მის სამეფო სტატუსსა და მაღალ წოდებას უსვამს ხაზს. მისი თავზე მძიმე, მოჩუქურთმებული გვირგვინი ამშვენებს, რაც ახალი მეფის ატრიბუტია. მისი პოზა - მშვიდი, მაგრამ მტკიცე - გადმოსცემს მის თანდაყოლილ სიბრძნესა და მზადყოფნას მმართველობისთვის. თინათინის სახეზეც კი, მიუხედავად იმისა, რომ სრულად არ ჩანს, იგრძნობა მისი საზეიმო და პასუხისმგებლობით სავსე განწყობა. სამეფო დარბაზი: ფონზე ჩანს დიდებული სამეფო დარბაზი მაღალი, მოჩუქურთმებული სვეტებით და რთული ორნამენტებით, რაც ქმნის საზეიმო და ამაღლებულ ატმოსფეროს. ოქროსფერი განათება, სავარაუდოდ, ჩირაღდნებიდან ან სანთლებიდან მოდის, რაც სცენას ბრწყინვალებას მატებს. დიდებულები და ხალხი: ტახტის ირგვლივ თავმოყრილნი არიან დიდებულები და ვეზირები, ზოგიერთ მათგანს წვერი აქვს, რაც მათ ასაკსა და გამოცდილებაზე მიანიშნებს. ფოტოს წინა პლანზე, ტახტის ძირში, მუხლებზე დგას ერთი მოხუცი მამაკაცი, რაც ხაზს უსვამს თინათინის ძალაუფლებას და ქვეშევრდომთა პატივისცემას. ეს სცენა ასახავს იმ მომენტს, როდესაც დიდებულები და ხალხი აღიარებენ ახალ მმართველს და ერთგულებას უცხადებენ მას. პოემის მიხედვით, ეს იყო როსტევან მეფის გადაწყვეტილება, რომელმაც თინათინი სიცოცხლეშივე გაამეფა, რათა დაენახა, როგორ გაართმევდა თავს ქვეყნის მართვას.',
   },
   {
     id: '18',
@@ -349,7 +360,7 @@ export const ChildrenItems: ChildrenItemsType[] = [
     ],
     title: 'უცხო მოყმის გამოჩენის ეპიზოდი',
     description:
-      "A heroic Georgian warrior from the 12th century with a straight and small mustache, wearing a cloak made of tiger fur, with a headpiece fashioned from the same material and a tiger's-eye hat on his head. The warrior’s strong arms are adorned with leather straps, holding a large whip in one hand, contrasting with the elegant nature of his attire. The warrior sits by the edge of a river, his head bowed low in sadness, tears glistening in his eyes as he cries. Behind him, a black horse, saddled with a golden harness, stands patiently, its mane wild in the wind, waiting for the warrior. The scene exudes a mystical aura, with the water reflecting the warrior's figure. The warrior’s expression is filled with sorrow and reflection, surrounded by scattered pearls on the ground. The background is lush, full of natural beauty, and evokes the historical atmosphere of the 12th century, enhancing the ethereal and medieval setting. The scene is realistic, as if captured in a moment of intense emotion, with every detail appearing lifelike",
+      'XII საუკუნის გმირული ქართველი მეომარი, სწორი და პატარა ულვაშით, შემოსილი ვეფხვის ბეწვის მოსასხამით, ამავე მასალისგან შექმნილი თავსაბურავითა და ვეფხვისთვალა ქუდით. მეომრის ძლიერი ხელები ტყავის სამაგრებით არის დამშვენებული, ერთ ხელში კი დიდი მათრახი უჭირავს, რაც კონტრასტს ქმნის მისი სამოსის ელეგანტურ ბუნებასთან. მეომარი მდინარის ნაპირას ზის, თავი მწუხარებისგან დაბლა აქვს დახრილი, თვალებში ცრემლები უელავს და ტირის. მის უკან შავი ცხენი დგას მოთმინებით, ოქროსფერი აღკაზმულობით, მისი ფაფარი ქარში ფრიალებს, ელოდება მეომარს. სცენა მისტიკურ აურას აფრქვევს, წყალი მეომრის ფიგურას ირეკლავს. მეომრის გამომეტყველება მწუხარებითა და ჩაფიქრებითაა სავსე, ირგვლივ მიწაზე მიმოფანტული მარგალიტებით. ფონი მდიდარია, სავსე ბუნებრივი სილამაზით და XII საუკუნის ისტორიულ ატმოსფეროს იწვევს, რაც აძლიერებს ზღაპრულ და შუა საუკუნეების გარემოს. სცენა რეალისტურია, თითქოს დაფიქსირებულია ძლიერი ემოციების მომენტში, ყოველი დეტალი ცოცხლად გამოიყურება.',
     authorName: 'საბა ჯოლბორდი',
     authorEmail: 'jolbordisaba@gmail.com',
     authorPhoneNumber: '599 54 22 17',
@@ -444,17 +455,22 @@ export const aboutUsContent: AboutUsContentType[] = [
   {
     id: 1,
     content:
-      'ჩვენი გუნდი არის პროფესიონალების გაერთიანება, რომლის მიზანია შექმნას თანამედროვე და ინოვაციური პროდუქტი, რომელიც პასუხობს მომხმარებლის საჭიროებებს. ჩვენთვის მნიშვნელოვანია ხარისხი, ნდობა და გრძელვადიანი ურთიერთობები.',
+      'მოხარული ვართ წარმოგიდგინოთ უნიკალური პროექტი, რომელიც აერთიანებს ქართული ლიტერატურის შედევრს – შოთა რუსთაველის „ვეფხისტყაოსანს“ – და თანამედროვე ტექნოლოგიებს. ამ ვებგვერდზე განთავსებულია „ვეფხისტყაოსნის“ სხვადასხვა ეპიზოდის ამსახველი ვიზუალური მასალა, რომელიც გორის მეორე საჯარო სკოლის მოსწავლეებმა შექმნეს.',
   },
   {
     id: 2,
     content:
-      'ჩვენი ხედვაა ვიყოთ ლიდერი ჩვენს სფეროში, წარმოვაჩინოთ კულტურა და ხელოვნება თანამედროვე ტექნოლოგიების მეშვეობით. ჩვენს გუნდს გამოარჩევს კრეატიულობა, ყურადღება დეტალებზე და მომხმარებელზე ორიენტირებული მიდგომა.',
+      'პროექტის განსაკუთრებულობა იმაში მდგომარეობს, რომ მოსწავლეებმა ფოტოების გენერირებისთვის გამოიყენეს ხელოვნური ინტელექტი. მათ შეიმუშავეს დეტალური ტექსტური აღწერები თითოეული სასურველი სცენისთვის, რის საფუძველზეც ხელოვნურმა ინტელექტმა შექმნა შთამბეჭდავი ვიზუალიზაციები.',
   },
   {
     id: 3,
     content:
-      'თუ გსურთ მეტი გაიგოთ ჩვენს პროექტებზე, გთხოვთ დაგვიკავშირდეთ ნებისმიერ დროს. ერთად შევქმნათ რაღაც განსაკუთრებული!',
+      'ამ ინოვაციური მიდგომის ფარგლებში, გორის მეორე საჯარო სკოლის მოსწავლეებმა გაიარეს რამდენიმე საინტერესო ლექცია ხელოვნური ინტელექტის გამოყენების შესახებ. ტრენინგები ჩაატარა ილიას სახელმწიფო უნივერსიტეტის კიბერლაბორატორია „უნილაბის“ დირექტორმა, ბატონმა სანდრო ასათიანმა, რომელმაც მათ თანამედროვე ტექნოლოგიების შესაძლებლობები გააცნო.',
+  },
+  {
+    id: 4,
+    content:
+      'ეს პროექტი ნათელი მაგალითია იმისა, თუ როგორ შეიძლება განათლებაში ტექნოლოგიების ინტეგრაციამ ხელი შეუწყოს შემოქმედებით აზროვნებასა და ახალი უნარების განვითარებას. ვიმედოვნებთ, რომ ეს ნამუშევრები გაამდიდრებს თქვენს გამოცდილებას „ვეფხისტყაოსნის“ სამყაროში მოგზაურობისას.',
   },
 ];
 
