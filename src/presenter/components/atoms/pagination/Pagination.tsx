@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PaginationButtons from '../../../paginationButtons/PaginationButton';
+import PaginationButtons from '../paginationButtons/PaginationButton';
 
 interface PaginationProps {
   totalPages: number;
@@ -30,7 +30,7 @@ export default function Pagination({
             className={`text-font-primary cursor-pointer rounded-lg bg-white px-4 py-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.07)] ${
               currentPage === i + 1
                 ? 'text-primary-blue font-extrabold'
-                : 'font-normal text-font-primary'
+                : 'text-font-primary font-normal'
             }`}
             key={i}
             onClick={() => handlePageChange(i + 1)}
