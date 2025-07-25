@@ -37,8 +37,8 @@ export default function Header() {
   }, [isPopupVisible]);
 
   return (
-    <header className="bg-header-bg max-sm:bg-white flex w-full flex-row min-h-[72px] z-20">
-      <div className="mx-auto flex w-full max-w-[1442px] items-center justify-between px-12 max-lg:px-6 py-4 max-sm:hidden">
+    <header className="bg-header-bg z-20 flex min-h-[72px] w-full flex-row max-sm:bg-white">
+      <div className="mx-auto flex w-full max-w-[1442px] items-center justify-between px-12 py-4 max-lg:px-6 max-sm:hidden">
         <Link to="/" className="flex items-center">
           <img src={Logo} alt="Logo" />
         </Link>
@@ -47,7 +47,7 @@ export default function Header() {
           activeLinkClassName="text-primary-red font-semibold"
         />
       </div>
-      <div className="flex w-full max-w-[1442px] items-center justify-between sm:hidden z-20 px-5">
+      <div className="z-20 flex w-full max-w-[1442px] items-center justify-between px-5 sm:hidden">
         <Link to="/">
           <img src={Logo} alt="Logo" />
         </Link>
@@ -56,11 +56,11 @@ export default function Header() {
         </button>
       </div>
       <div
-        className={`fixed inset-0 bg-[#00000066] top-[72px] backdrop-blur-xs opacity-80 z-10 sm:hidden transition-opacity duration-300 ${!isPopupVisible ? 'hidden' : ''}`}
+        className={`fixed inset-0 top-[72px] z-10 bg-[#00000066] opacity-80 backdrop-blur-xs transition-opacity duration-300 sm:hidden ${!isPopupVisible ? 'hidden' : ''}`}
         onClick={handleBurgerClick}
       ></div>
       <div
-        className={`absolute top-[76px] left-0 w-full bg-white shadow-lg z-20 sm:hidden transition-[max-height,opacity] duration-500 overflow-hidden flex flex-col items-center justify-center ${isPopupVisible ? 'max-h-[195px] opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`absolute top-[76px] left-0 z-20 flex w-full flex-col items-center justify-center overflow-hidden bg-white shadow-lg transition-[max-height,opacity] duration-500 sm:hidden ${isPopupVisible ? 'max-h-[195px] opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <Navigation
           linkClassName="text-primary-blue font-semibold"
