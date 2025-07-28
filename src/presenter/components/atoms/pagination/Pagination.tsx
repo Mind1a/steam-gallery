@@ -18,13 +18,13 @@ export default function Pagination({
   };
 
   return (
-    <div className="flex items-center justify-center gap-1">
+    <div className="flex justify-center items-center gap-1">
       <PaginationButtons
-        text="Back"
+        text="წინა"
         variant="left"
         onClick={() => handlePageChange(currentPage - 1)}
       />{' '}
-      <div className="flex w-full items-center justify-center gap-2">
+      <div className="flex justify-center items-center gap-2 w-full">
         {Array.from({ length: totalPages }, (_, i) => (
           <button
             className={`text-font-primary cursor-pointer rounded-lg bg-white px-4 py-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.07)] ${
@@ -40,7 +40,7 @@ export default function Pagination({
         ))}
       </div>
       <PaginationButtons
-        text="Next"
+        text="შემდეგი"
         variant="right"
         onClick={() => handlePageChange(currentPage + 1)}
       />

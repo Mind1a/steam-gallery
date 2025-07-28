@@ -8,7 +8,7 @@ export const ContactContent = () => {
       <div className="relative mx-auto w-full max-w-[1442px] overflow-hidden slider-padding">
         <img src={AboutUs} alt="About Us Background" />
       </div>
-      <div className="flex flex-col flex-1 justify-center items-center gap-6 px-6 lg:px-12 py-8 max-w-[1442px]">
+      <div className="flex flex-col flex-1 justify-center items-center gap-6 mx-auto px-6 lg:px-12 py-8 max-w-[1442px]">
         <div className="flex flex-col gap-4">
           <div className="flex md:flex-row flex-col gap-4">
             <div className="flex flex-col justify-start gap-3 min-h-[366px]">

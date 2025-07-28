@@ -52,7 +52,7 @@ export default function ArtistViewContent() {
   if (!currentItem) return null;
 
   return (
-    <div className="relative flex flex-col flex-1 gap-6 md:gap-12 px-6 lg:px-[49px]">
+    <div className="relative flex flex-col flex-1 gap-6 md:gap-12 mx-auto px-6 lg:px-[49px]">
       {/* modal */}
       {openModal && (
         <GalleryModal images={currentItem.images} closeModal={closeModal} />
