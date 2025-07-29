@@ -20,9 +20,9 @@ export default function Gallery() {
   return (
     <>
       <div className="flex flex-col items-center mx-auto mb-[32px] p-12 max-lg:p-6 w-full max-w-[1442px]">
-        <p className="mb-4 max-sm:mb-3 w-full text-font-primary font-light text-2xl text-left">
+        <h2 className="mb-10 w-full text-font-primary font-bold text-4xl text-center">
           გალერეა
-        </p>
+        </h2>
         <div className="gap-6 grid grid-cols-2 md:grid-cols-3 mb-6">
           {currentIllustrations.map((item) => (
             <GalleryIllustration key={item.id} item={item} />
