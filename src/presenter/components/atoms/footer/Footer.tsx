@@ -1,8 +1,8 @@
 import { Link } from 'react-router';
 export default function Footer() {
   return (
-    <footer className="bg-footer-bg font flex w-full font-light text-[#E0E0E0]">
-      <div className="mx-auto flex w-full max-w-[1442px] justify-between px-12 pt-[35px] pb-[32px] max-sm:flex-col max-sm:items-center max-sm:gap-4 max-sm:px-3">
+    <footer className="flex bg-footer-bg w-full font-light text-[#E0E0E0] font">
+      <div className="flex max-sm:flex-col justify-between max-sm:items-center max-sm:gap-4 mx-auto px-12 max-sm:px-3 pt-[35px] pb-[32px] w-full max-w-[1442px]">
         <p className="font-light">
           საიტზე მუშაობდა{' '}
           <Link
@@ -15,8 +15,7 @@ export default function Footer() {
           გუნდი
         </p>
         <Link
-          to="https://iliauni.edu.ge/en/studentebistvis/iliaunis-kiberlaboratoria-unilabi"
-          target="_blank"
+          to="mailto:infounilab@iliauni.edu.ge"
           className="font-font-weight-250 max-sm:text-[12px]"
         >
           infounilab@iliauni.edu.ge
