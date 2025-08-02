@@ -17,6 +17,11 @@ export default function ArtistViewContent() {
   // ------- id for current item from dynamic routing ----------//
   const { id } = useParams<{ id: string }>();
 
+  // -------- Scroll to top on path change --------------//
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [id]);
+
   // ------- states for defining current item and main image ----------//
   const [galleryMain, setGalleryMain] = useState<string>('');
   const [currentItem, setCurrentItem] = useState<ChildrenItemsType>();
